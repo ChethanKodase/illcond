@@ -128,6 +128,18 @@ python nvae/NvaeSampleSpecificQualitativePlotsForCLassicAttacks.py --desired_nor
 ```
 </pre>
 
+#### To get sample wise qualitative results of all universal attacks
+
+
+<pre>
+```
+python nvae/NvaeAllUniversalAttacksSampleWiseQualitativePlots.py --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint --uni_noise_path ../NVAE/attack_run_time_univ/attack_noise --desired_norm_l_inf 0.025
+```
+</pre>
+
+
+
+
 #### TO Run Layerwise gradient restoration effects ablation 
 
 <pre>
