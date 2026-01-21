@@ -66,7 +66,6 @@ python nvae/NvaeConditionNumberSingularValuesPlotsForTheEncoder.py
 #### To run universal adversarial attacks on NVAE
 
 
-
 To save condition numbers to use in GRILL
 
 
@@ -138,6 +137,31 @@ python nvae/NvaeSampleSpecificQualitativePlotsForCLassicAttacks.py --desired_nor
 ```
 </pre>
 
+#### TO Run Layerwise gradient restoration effects ablation 
+
+<pre>
+```
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_allSum" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_30pRev" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_50pRev" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_70pRev" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_90pRev" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoints
+```
+</pre>
+
+#### To plot the above ablation results
+
+<pre>
+```
+python nvae/NvaeLayerFractionsAblation.py
+```
+</pre>
+
+
+
+
+
 #### To run layer weighting ablations on NVAE
 <pre>
 ```
@@ -146,3 +170,4 @@ python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_l2_mcmc_eqwts
 python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_l2_mcmc_rndwts" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 ```
 </pre>
+
