@@ -5,15 +5,6 @@
 
 We consider the official implementation of NVAE from https://github.com/NVlabs/NVAE. We take the pretrained weights from  the oficial publishers and implement adversarial attacks
 
-#### clone the nvae official repository using the code below: 
-
-<pre>
-```
-git clone https://github.com/NVlabs/NVAE.git
-```
-</pre>
-
-
 
 Follow the instructions from https://github.com/NVlabs/NVAE and download the checkpoints for celebA 64 dataset from https://drive.google.com/drive/folders/14DWGte1E7qnMTbAs6b87vtJrmEU9luKn 
 
@@ -157,9 +148,6 @@ python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf" --desired_no
 python nvae/NvaeLayerFractionsAblation.py
 ```
 </pre>
-
-
-
 
 
 #### To run layer weighting ablations on NVAE
