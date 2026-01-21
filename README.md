@@ -78,3 +78,16 @@ python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf" --desired_nor
 </pre>
 
 
+#### To run sample specific attacks on NVAE
+
+<pre>
+```
+python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "la_l2_kf_SS" --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "la_wass_kf_cr_SS" --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "la_cos_kf_cr_SS" --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "grill_l2_kf_SS" --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "grill_wass_kf_SS" --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "grill_cos_kf_SS" --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+
+```
+</pre>
