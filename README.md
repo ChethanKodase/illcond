@@ -166,3 +166,11 @@ python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_l2_mcmc_rndwt
 python nvae/NvaeGetConvergencePlots.py
 ```
 </pre>
+
+#### To get nvae layerlosses tracking plots
+
+<pre>
+```
+python nvae/NvaeLayerLossesPlotsSymlog.py 
+```
+</pre>
