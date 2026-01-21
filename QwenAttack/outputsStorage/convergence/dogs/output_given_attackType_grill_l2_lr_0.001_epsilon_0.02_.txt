@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two golden retriever puppies sitting on a grassy area covered with orange flower petals. The puppies appear to be happy and are looking directly at the camera. The background is a blurred green, suggesting an outdoor setting, possibly a park or a garden.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two golden retriever dogs sitting on a grassy area with flowers around them. The dogs appear to be looking at the camera, and there is text overlaid on the image that includes phrases like "in 2011," "July," "15," and "days." The text seems to be part of a caption or description, possibly related to an event or milestone that occurred in July 2011. The overall setting appears to be outdoors in a natural environment.

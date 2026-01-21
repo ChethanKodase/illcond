@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image depicts a serene scene of a boat on calm water during what appears to be either sunrise or sunset, given the warm, golden hues in the sky and the reflection on the water. The boat is stationary, and there is a bridge in the background with cables supporting it. The overall atmosphere is peaceful and picturesque.

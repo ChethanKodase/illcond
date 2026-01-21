@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+UiThread [Jack & Jill]

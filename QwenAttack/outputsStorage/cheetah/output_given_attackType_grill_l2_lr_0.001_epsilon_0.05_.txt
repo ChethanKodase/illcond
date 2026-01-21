@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two leopards in a natural setting, likely a savanna or a similar habitat. The leopard in the foreground is walking towards the camera, while the one in the background is sitting and looking to the side. The environment includes grass, bushes, and a dirt path, suggesting a wildlife reserve or a similar area where these animals might be found. The photograph appears to have been taken by a professional photographer, as indicated by the watermark "© Burrard-Lucas.com" in the bottom right corner.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a close-up of a leopard's face, with the background blurred to emphasize the animal. The leopard appears to be in a natural setting, possibly a savanna or forested area, with greenery and sky visible in the background. The image has been edited to include a digital overlay of a cartoon character, which appears to be a stylized version of a person wearing a helmet and holding a weapon. The character is positioned as if it were interacting with the leopard, but it is not a real interaction; rather, it is a digital addition to the photo.

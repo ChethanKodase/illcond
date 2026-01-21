@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a serene and picturesque landscape, likely a golf course or a well-maintained park. It features a lush green lawn with vibrant purple flowers in the foreground, which appear to be azaleas. A small body of water, possibly a pond or a lake, is visible in the middle ground, with a bridge crossing over it. The background is filled with more greenery and trees, creating a tranquil and inviting atmosphere. The sky is clear and blue, suggesting a sunny day.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a close-up view of a plant with small, round, white structures that resemble seeds or spores. These structures are clustered together on the surface of the plant. The background appears to be a natural setting, possibly a garden or a field, with greenery and soil visible. The focus is on the plant's surface, highlighting the texture and details of the white structures.

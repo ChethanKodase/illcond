@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two golden retriever puppies sitting on a grassy area covered with orange flower petals. The puppies appear to be happy and are looking directly at the camera. The background is a blurred green, suggesting an outdoor setting, possibly a park or a garden.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a digital illustration or graphic design featuring a patterned background with a green and brown color scheme. The pattern includes various shapes and symbols, possibly representing a digital or virtual environment. There are also some text elements present, which seem to be part of the design, but they are not clearly legible. The overall style suggests it could be related to a digital art project, a game design, or a creative digital composition.

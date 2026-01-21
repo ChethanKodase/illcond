@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a vast, flat landscape that appears to be a salt flat, likely the Salar de Uyuni in Bolivia, which is known for its mirror-like surface that reflects the sky and clouds above. The person in the image is walking across the salt flat, and the reflection of the clouds creates a surreal effect, making it look as though the clouds are floating above the ground. The sky is partly cloudy with patches of blue visible, adding to the dramatic and serene atmosphere of the scene.
+
+=== ADVERSARIAL OUTPUT ===
+This image shows a "Dewey" hedgehog, which is a type of hedgehog that has been modified to look like a human face. The hedgehog's face is made up of the words "Dewey" repeated multiple times, creating a pattern that resembles a face. The hedgehog appears to be in a natural setting, possibly a field or a park, and there is a person standing near it. The image is also surrounded by a "Dewey" hedgehog pattern, creating a surreal and artistic effect.

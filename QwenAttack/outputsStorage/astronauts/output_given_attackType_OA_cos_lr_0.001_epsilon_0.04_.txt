@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image depicts two individuals wearing spacesuits, standing on a small wooden platform or dock that appears to be partially submerged in water. The water is littered with various pieces of debris, including plastic bottles and other waste. The background shows a hazy sky and what seems to be a distant shoreline. The overall scene suggests an environmental issue, possibly related to pollution, as the water is contaminated with trash. The presence of the spacesuits adds a surreal or symbolic element to the image, perhaps indicating a commentary on human impact on the environment or a metaphor for the challenges faced by astronauts in space.

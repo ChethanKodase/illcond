@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a serene and picturesque landscape, likely a golf course or a well-maintained park. It features a lush green lawn with vibrant purple flowers in the foreground, which appear to be azaleas. A small body of water, possibly a pond or a lake, is visible in the middle ground, with a bridge crossing over it. The background is filled with more greenery and trees, creating a tranquil and inviting atmosphere. The sky is clear and blue, suggesting a sunny day.
+
+=== ADVERSARIAL OUTPUT ===
+This image appears to be a humorous and digitally altered photo of a person's face, where the facial features have been replaced with various objects such as a computer screen, a keyboard, and other items typically found on a desk or workspace. The background seems to be a real-world setting, possibly an office or a room, but the foreground is heavily edited to create a surreal effect.

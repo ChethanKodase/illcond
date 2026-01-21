@@ -1,0 +1,7 @@
+=== CLEAN OUTPUT ===
+The image depicts an illustration of Sir Isaac Newton conducting his famous experiment to demonstrate the dispersion of white light into its constituent colors using a prism. In the image, Newton is shown holding a prism and directing a beam of white light through it. The light is then projected onto a wall or screen, where it appears as a spectrum of colors, including red, orange, yellow, green, blue, and violet. This experiment was pivotal in establishing the theory that white light is composed of all the colors of the rainbow. The setting appears to be a laboratory with various scientific instruments and equipment visible in the background.
+
+=== ADVERSARIAL OUTPUT ===
+This image appears to be a stylized, pixelated representation of a scene with two people standing in what looks like a room or hallway. The person on the left seems to be holding a device that is emitting a colorful beam or light, which could be interpreted as a hologram or some form of projection. The person on the right is looking at their own device, possibly interacting with the projected content.
+
+The room has various objects and decorations, including what looks like a plant, a mirror, and some shelves with items on them. The overall aesthetic suggests a modern, possibly futuristic setting. The image has a high level of detail and texture

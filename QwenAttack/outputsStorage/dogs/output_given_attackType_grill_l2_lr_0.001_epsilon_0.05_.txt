@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two golden retriever puppies sitting on a grassy area covered with orange flower petals. The puppies appear to be happy and are looking directly at the camera. The background is a blurred green, suggesting an outdoor setting, possibly a park or a garden.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a view of the interior of a vehicle, likely a car or a similar type of vehicle. The focus is on the dashboard and part of the steering wheel. The dashboard appears to be equipped with various controls and displays, including what looks like a digital display screen. The steering wheel has a design that suggests it might be from a modern vehicle, possibly with a focus on technology and comfort. The overall condition of the dashboard and the clarity of the image suggest that it is a clean and well-maintained vehicle.

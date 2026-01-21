@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a serene and picturesque landscape, likely a golf course or a well-maintained park. It features a lush green lawn with vibrant purple flowers in the foreground, which appear to be azaleas. A small body of water, possibly a pond or a lake, is visible in the middle ground, with a bridge crossing over it. The background is filled with more greenery and trees, creating a tranquil and inviting atmosphere. The sky is clear and blue, suggesting a sunny day.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a distorted and distorted landscape with a distorted sky. The distortion appears to be caused by a filter or effect that warps the image, making it look like the ground is wavy and the sky is stretched. This kind of distortion can be achieved through various digital editing techniques or filters in photo editing software.

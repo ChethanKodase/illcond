@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two side-by-side visualizations of what appears to be the first direct image of a black hole, captured by the Event Horizon Telescope (EHT). The left image is labeled "EHT," and the right image is labeled "EHT with PRIMO." Both images depict a bright ring-like structure with a dark center, which is characteristic of the event horizon of a black hole. The "PRIMO" in the right image likely refers to a technique or model used to enhance or refine the image, as PRIMO stands for "Perturbative Reconstruction of Images from Multiple Observations." This enhancement could help in improving
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two large, illuminated numbers "9" and "9" on a dark background with a pattern of small text and symbols. The numbers appear to be part of a larger display or interface, possibly related to a digital clock, a score display, or some form of electronic scoreboard. The text around the numbers includes various symbols and characters, which might represent different languages or technical data. The overall design suggests a modern, high-tech aesthetic.

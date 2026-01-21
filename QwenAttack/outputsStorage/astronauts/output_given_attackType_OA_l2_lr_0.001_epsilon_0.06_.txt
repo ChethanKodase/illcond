@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a collage of various symbols and icons, including what looks like a person wearing a hat, a clock, and other abstract shapes. It seems to be a digital or graphic design composition rather than a photograph of a specific scene or object. The symbols might represent different concepts or themes, but without additional context, it's difficult to determine their exact meaning or purpose.

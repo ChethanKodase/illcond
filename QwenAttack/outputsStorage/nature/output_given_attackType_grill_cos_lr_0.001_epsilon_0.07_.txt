@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a serene and picturesque landscape, likely a golf course or a well-maintained park. It features a lush green lawn with vibrant purple flowers in the foreground, which appear to be azaleas. A small body of water, possibly a pond or a lake, is visible in the middle ground, with a bridge crossing over it. The background is filled with more greenery and trees, creating a tranquil and inviting atmosphere. The sky is clear and blue, suggesting a sunny day.
+
+=== ADVERSARIAL OUTPUT ===
+This image appears to be a collage or a composite of two different scenes. The top half shows an aerial view of a landscape with a river, trees, and possibly some buildings or structures along the riverbank. The bottom half seems to be a close-up of a natural scene, possibly a forest floor with leaves and small plants, but it's not entirely clear due to the distortion and blending of the images. The overall effect gives the impression of a surreal or manipulated image where the two scenes are not naturally aligned.

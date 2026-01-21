@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a vast, flat landscape that appears to be a salt flat, likely the Salar de Uyuni in Bolivia, which is known for its mirror-like surface that reflects the sky and clouds above. The sky is filled with large, fluffy clouds, and their reflection can be seen on the smooth, white surface of the salt flat. A person is walking across the salt flat, adding a sense of scale to the immense expanse of the landscape. The scene is serene and breathtaking, showcasing the unique beauty of this natural wonder.
+
+=== ADVERSARIAL OUTPUT ===
+这张图片展示了一个被许多白色物体覆盖的场景。这些白色物体看起来像是鞋子，它们散布在整个画面中，有些部分重叠在一起。背景似乎是一个户外的环境，可能是一个广场或公园，因为可以看到一些树木和远处的建筑物轮廓。整体上，这张图片给人一种混乱和不协调的感觉，因为这么多鞋子突然出现在一个通常不会出现这种物品的地方。

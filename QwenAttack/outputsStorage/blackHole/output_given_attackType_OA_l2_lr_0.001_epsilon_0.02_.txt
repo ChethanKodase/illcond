@@ -1,0 +1,7 @@
+=== CLEAN OUTPUT ===
+The image shows two side-by-side visualizations of what appears to be the first direct image of a black hole, captured by the Event Horizon Telescope (EHT). The left image is labeled "EHT," and the right image is labeled "EHT with PRIMO." Both images depict a bright ring-like structure with a dark center, which is characteristic of the event horizon of a black hole. The "PRIMO" in the right image likely refers to a technique or model used to enhance or refine the image, as PRIMO stands for "Perturbative Reconstruction of Images from Multiple Observations." This enhancement could help in improving
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two side-by-side visualizations of the same object, labeled "EHT" and "EHT with PRIMO." These images appear to be representations of the first direct image of a black hole, which was captured by the Event Horizon Telescope (EHT) collaboration. The EHT is an array of radio telescopes that work together to create a virtual telescope as large as the Earth, allowing it to capture high-resolution images of black holes.
+
+The "EHT" image on the left appears to be the original image taken by the Event Horizon Telescope, while the "EHT with PRIMO" image on the right seems

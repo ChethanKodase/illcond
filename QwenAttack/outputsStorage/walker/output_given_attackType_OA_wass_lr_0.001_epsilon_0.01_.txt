@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a vast, flat landscape that appears to be a salt flat, likely the Salar de Uyuni in Bolivia, which is known for its mirror-like surface that reflects the sky and clouds above. The sky is filled with large, fluffy clouds, and their reflection can be seen on the smooth, white surface of the salt flat. A person is walking across the salt flat, adding a sense of scale to the immense expanse of the landscape. The scene is serene and breathtaking, showcasing the unique beauty of this natural wonder.
+
+=== ADVERSARIAL OUTPUT ===
+The image depicts a surreal landscape that appears to be a reflection of the sky on a highly reflective surface, possibly a salt flat or a frozen lake. The sky is filled with large, fluffy clouds, and the reflection creates an illusion where the clouds seem to be floating above the ground. A person is walking across the reflective surface, adding a sense of scale and perspective to the scene. The overall effect is dreamlike and otherworldly.

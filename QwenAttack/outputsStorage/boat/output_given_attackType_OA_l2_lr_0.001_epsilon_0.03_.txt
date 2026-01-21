@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a close-up of a textured surface with various patterns and colors. It looks like it could be a fabric, a piece of paper, or a digital rendering of a similar material. The patterns include small, repeating shapes that resemble leaves or organic forms, set against a background with a gradient of pink and purple hues. There are also some darker areas that might represent shadows or highlights, adding depth to the image. The overall impression is one of a naturalistic design, possibly inspired by nature or botanical themes.

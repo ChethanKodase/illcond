@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts an illustration of Sir Isaac Newton conducting his famous experiment to demonstrate the dispersion of white light into its constituent colors using a prism. In the image, Newton is shown holding a prism and directing a beam of white light through it. The light is then projected onto a wall or screen, where it appears as a spectrum of colors, including red, orange, yellow, green, blue, and violet. This experiment was pivotal in establishing the theory that white light is composed of all the colors of the rainbow. The setting appears to be a laboratory with various scientific instruments and equipment visible in the background.
+
+=== ADVERSARIAL OUTPUT ===
+This image appears to be a humorous and creative depiction of a rainbow虹桥 (a traditional Chinese bridge) being used as a broom to sweep the floor. The scene includes various elements that suggest a domestic setting, such as a table with items on it, a mirror, and a door. There are also some cultural elements like a statue and what looks like a religious icon or shrine in the background. The overall style seems to blend traditional and modern elements in a playful manner.

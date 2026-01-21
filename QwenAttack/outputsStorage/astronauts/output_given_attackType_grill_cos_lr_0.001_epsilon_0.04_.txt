@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a group of people standing together, smiling and posing for the photo. They appear to be outdoors, possibly at an event or gathering. The individuals are dressed casually, and there is a sense of camaraderie among them. The background is slightly blurred, which helps to focus attention on the people in the foreground. The setting seems to be a public space, as there are some structures and possibly other people in the distance.

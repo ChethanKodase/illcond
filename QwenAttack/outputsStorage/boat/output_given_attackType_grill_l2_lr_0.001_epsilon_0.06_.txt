@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a close-up of a textured surface, likely a piece of fabric or paper with a pattern that resembles a network of細かい穴や突起物。中央には大きな円形の模様があり、その周りに小さな穴が散在しています。全体的に暗いトーンで、光の反射が一部の部分を明るく照らしています。背景は暗く、オブジェクトの詳細なテクスチャとコントラストが際立っています。このオブジェクトは、何かの包装紙や装飾用の布地である可能性があります。

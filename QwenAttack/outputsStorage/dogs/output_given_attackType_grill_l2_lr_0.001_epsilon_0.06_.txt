@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two golden retriever puppies sitting on a grassy area covered with orange flower petals. The puppies appear to be happy and are looking directly at the camera. The background is a blurred green, suggesting an outdoor setting, possibly a park or a garden.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a highly stylized and abstract representation of two dogs. The background features a green, circuit-like pattern with various symbols and text, which gives the impression of a digital or technological theme. The dogs themselves are depicted in a way that blends with the background, making them appear almost as if they are part of the circuitry. The overall effect is surreal and artistic, combining elements of nature (the dogs) with technology (the circuit-like background).

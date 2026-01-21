@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two side-by-side visualizations of what appears to be the first direct image of a black hole, captured by the Event Horizon Telescope (EHT). The left image is labeled "EHT," and the right image is labeled "EHT with PRIMO." Both images depict a bright ring-like structure with a dark center, which is characteristic of the event horizon of a black hole. The "PRIMO" in the right image likely refers to a technique or model used to enhance or refine the image, as PRIMO stands for "Perturbative Reconstruction of Images from Multiple Observations." This enhancement could help in improving
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two side-by-side photographs of a person's face, but the faces have been edited to appear as if they are glowing or illuminated from within. The glow effect is symmetrical and appears to be emanating from the eyes and mouth areas, giving the impression that the person is glowing or has an internal light source. This type of editing can be achieved using photo editing software that allows for the addition of light effects or glow filters.

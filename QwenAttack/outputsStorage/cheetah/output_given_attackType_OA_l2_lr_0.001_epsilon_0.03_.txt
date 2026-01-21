@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two leopards in a natural setting, likely a savanna or a similar habitat. The leopard in the foreground is walking towards the camera, while the one in the background is sitting and looking to the side. The environment includes grass, bushes, and a dirt path, suggesting a wildlife reserve or a similar area where these animals might be found. The photograph appears to have been taken by a professional photographer, as indicated by the watermark "© Burrard-Lucas.com" in the bottom right corner.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a leopard, which is a large wild cat native to Africa and parts of Asia. The leopard has distinctive rosette patterns on its coat, which serve as camouflage in its natural habitat. The background appears to be a savanna or grassland environment, which is typical for leopards.

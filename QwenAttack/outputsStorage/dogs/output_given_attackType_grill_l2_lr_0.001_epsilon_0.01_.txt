@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two golden retriever puppies sitting on a grassy area covered with orange flower petals. The puppies appear to be happy and are looking directly at the camera. The background is a blurred green, suggesting an outdoor setting, possibly a park or a garden.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two golden retriever puppies running on a grassy area with colorful flowers scattered around. The background appears to be an outdoor setting, possibly a park or garden. The puppies look happy and energetic, with their tongues out as they run.

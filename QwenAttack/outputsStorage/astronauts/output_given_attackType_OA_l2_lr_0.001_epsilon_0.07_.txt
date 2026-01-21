@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two individuals standing on a beach, holding a white flag with a red cross on it. The flag is commonly associated with the International Red Cross and Red Crescent Movement, which is known for its humanitarian work, including providing aid during conflicts and disasters. The setting appears to be a coastal area, possibly after an event where such a flag would be used to signal for help or to indicate a safe zone.

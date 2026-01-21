@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts an illustration of Sir Isaac Newton conducting his famous experiment to demonstrate the dispersion of white light into its constituent colors using a prism. In the image, Newton is shown holding a prism and directing a beam of white light through it. The light is then projected onto a wall or screen, where it appears as a spectrum of colors, including red, orange, yellow, green, blue, and violet. This experiment was pivotal in establishing the theory that white light is composed of all the colors of the rainbow. The setting appears to be a laboratory with various scientific instruments and equipment visible in the background.
+
+=== ADVERSARIAL OUTPUT ===
+Trong hình ảnh này, chúng ta có thể thấy một bức ảnh của một sản phẩm hoặc vật phẩm nào đó được đặt trên nền trắng. Sản phẩm này có màu sắc chủ đạo là Xanh Lá Cây và Trắng. Tuy nhiên, do kích thước nhỏ và chất lượng ảnh không rõ ràng, khó có thể nhận biết chính xác về loại sản phẩm hoặc mục đích sử dụng của nó. Nếu bạn cần thêm thông tin cụ thể, bạn có thể cung cấp thêm chi tiết hoặc hướng dẫn cụ thể hơn.

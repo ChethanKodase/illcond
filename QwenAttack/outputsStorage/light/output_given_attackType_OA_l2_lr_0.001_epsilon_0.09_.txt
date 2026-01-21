@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts an illustration of Sir Isaac Newton conducting his famous experiment to demonstrate the dispersion of white light into its constituent colors using a prism. In the image, Newton is shown holding a prism and directing a beam of white light through it. The light is then projected onto a wall or screen, where it appears as a spectrum of colors, including red, orange, yellow, green, blue, and violet. This experiment was pivotal in establishing the theory that white light is composed of all the colors of the rainbow. The setting appears to be a laboratory with various scientific instruments and equipment visible in the background.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a stylized, artistic representation of a scene involving two individuals and a rainbow. The setting seems to be indoors, with the individuals standing near what looks like a fireplace or a similar structure. The rainbow is depicted as if it is being projected or emitted from one of the individuals, suggesting a magical or fantastical element. The overall style of the image is reminiscent of a vintage illustration or a piece of fantasy art.

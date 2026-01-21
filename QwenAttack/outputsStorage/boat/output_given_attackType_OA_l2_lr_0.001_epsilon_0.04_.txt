@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a close-up of a surface with a pattern that includes various symbols and text. The symbols include what looks like the letters "V" and "P," as well as other characters that might represent different symbols or icons. The background has a gradient of colors, possibly indicating a digital or virtual environment. The text and symbols could be part of a user interface, a game, or some form of digital art. Without additional context, it's difficult to determine the exact purpose or meaning of the image.

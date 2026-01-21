@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a scene from a video game or an animated series, featuring a character in a red and white outfit standing on a platform with a large, mechanical-looking structure in the background. The character seems to be in a combat stance, possibly preparing for battle or engaging in some form of action. The environment suggests a sci-fi or fantasy setting, with the character's attire and the surrounding elements contributing to this theme. The text "PUBG" visible in the bottom left corner indicates that this image might be related to the popular battle royale game PlayerUnknown's Battlegrounds (PUBG).

@@ -1,0 +1,13 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a collage of various scenes and objects, including:
+
+1. A sunset or sunrise with a cityscape in the background.
+2. A close-up of a person's hand holding a small object, possibly a piece of jewelry or a tool.
+3. A close-up of a person's face, possibly in a state of surprise or shock.
+4. A close-up of a person's hand holding a small object, possibly a piece of jewelry or a tool.
+5. A close-up of a person's hand holding a small object, possibly a piece of jewelry or a tool.
+
+The overall theme seems to be a

@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a person standing on a boat or a similar watercraft, with a scenic background that includes a large building with domes and towers, which resembles the Red Fort in Delhi, India. The person appears to be wearing traditional attire, possibly indicating a cultural or historical context. The water body reflects the building, adding to the picturesque quality of the scene.

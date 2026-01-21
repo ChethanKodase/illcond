@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a stylized, abstract representation of a cityscape or urban environment. It features a mix of geometric shapes and patterns that resemble buildings, roads, and possibly water bodies. The colors are vibrant and include shades of blue, purple, and pink, giving it an artistic and somewhat futuristic feel. The overall design is reminiscent of digital art or a graphic representation rather than a photograph of a real-world scene.

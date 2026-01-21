@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a collage of various text snippets and phrases, primarily in English, with some elements in other languages. The text seems to be from different sources, including web pages, documents, or social media posts. The content includes references to "figure," "table," "data," "analysis," and other terms that suggest it might be related to academic or research material. The background of the image has a gradient effect, transitioning from dark to light, which gives it a somewhat abstract appearance. It's not clear what specific information or context these snippets are from without additional context or metadata.

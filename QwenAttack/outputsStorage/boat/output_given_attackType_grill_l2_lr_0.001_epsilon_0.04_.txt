@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a close-up of a piece of paper or a label with a white background and black text. The text appears to be in a foreign language, possibly Arabic, given the shapes of the characters. The paper seems to have some kind of design or pattern on it, which could be a watermark or decorative element. The overall appearance suggests that it might be a label or a document of some sort.

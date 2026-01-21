@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image depicts two individuals wearing spacesuits walking on what appears to be a floating platform or structure in the middle of a body of water. The setting looks like it could be part of a film or a staged scene, given the unusual and surreal nature of the situation. The background shows a cloudy sky and some distant land or structures, adding to the otherworldly atmosphere.

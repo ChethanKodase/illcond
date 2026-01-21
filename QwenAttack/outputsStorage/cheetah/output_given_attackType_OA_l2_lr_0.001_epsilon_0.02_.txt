@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two leopards in a natural setting, likely a savanna or a similar habitat. The leopard in the foreground is walking towards the camera, while the one in the background is sitting and looking to the side. The environment includes grass, bushes, and a dirt path, suggesting a wildlife reserve or a similar area where these animals might be found. The photograph appears to have been taken by a professional photographer, as indicated by the watermark "© Burrard-Lucas.com" in the bottom right corner.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two leopards in a natural setting, likely a savanna or forested area. The foreground leopard is closer to the camera and appears to be walking towards it, while the background leopard is sitting on the ground, looking in the direction of the camera. The environment includes green vegetation and a cloudy sky, suggesting a daytime scene in a wildlife habitat.

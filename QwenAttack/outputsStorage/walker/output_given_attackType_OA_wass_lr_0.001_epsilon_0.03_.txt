@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a vast, flat landscape that appears to be a salt flat, likely the Salar de Uyuni in Bolivia, which is known for its mirror-like surface that reflects the sky and clouds above. The sky is filled with large, fluffy clouds, and their reflection can be seen on the smooth, white surface of the salt flat. A person is walking across the salt flat, adding a sense of scale to the immense expanse of the landscape. The scene is serene and breathtaking, showcasing the unique beauty of this natural wonder.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a person standing on a frozen body of water, likely a lake or river, with ice formations visible around them. The person appears to be wearing winter clothing and is standing on the ice, which has a textured surface indicating it might be thick enough for walking but still not completely solid. The background includes more ice formations and possibly some snow, suggesting a cold environment. The overall scene gives the impression of a winter landscape, possibly during a period of freezing temperatures.

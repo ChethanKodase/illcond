@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a display of various items, including what appears to be a collection of small, rectangular objects that could be electronic components or parts of a device. There are also some larger, irregularly shaped objects that might be tools or other equipment. The background includes a patterned surface with text and symbols, which could be part of a display case or a wall design. The overall setting suggests an exhibit or a showcase of technical or scientific items.

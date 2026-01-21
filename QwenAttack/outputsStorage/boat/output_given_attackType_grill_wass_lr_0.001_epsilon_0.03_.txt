@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a close-up of a label or text on an object, possibly a product or packaging. The text is not fully legible due to the resolution and angle, but it seems to contain some form of branding or information. The background is dark, which might suggest that the object is placed against a dark surface or backdrop. If you can provide more context about what kind of object this is, I might be able to offer more specific details.

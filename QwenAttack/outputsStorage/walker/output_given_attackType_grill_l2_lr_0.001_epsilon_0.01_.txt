@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a vast, flat landscape that appears to be a salt flat, likely the Salar de Uyuni in Bolivia, which is known for its mirror-like surface that reflects the sky and clouds above. The person in the image is walking across the salt flat, and the reflection of the clouds creates a surreal effect, making it look as though the clouds are floating above the ground. The sky is partly cloudy with patches of blue visible, adding to the dramatic and serene atmosphere of the scene.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a person walking on a reflective surface that appears to be a body of water, reflecting the sky and clouds above. The reflection creates an illusion where the clouds appear to be floating above the person, giving the impression that they are walking on clouds. The sky is clear with some scattered clouds, and there is a faint rainbow visible in the background. The overall effect is a surreal and dreamlike scene.

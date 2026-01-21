@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a scene from the movie "2001: A Space Odyssey." It shows two astronauts in spacesuits standing on a platform that seems to be floating in water, with a foggy background and a structure resembling a space station or a docking station in the distance. The scene is iconic and is often associated with the film's exploration of space travel and the unknown.

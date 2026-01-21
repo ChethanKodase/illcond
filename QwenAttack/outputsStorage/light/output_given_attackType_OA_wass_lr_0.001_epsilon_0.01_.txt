@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+This image depicts an illustration of Sir Isaac Newton conducting his famous experiment to demonstrate the dispersion of white light into its constituent colors, forming a rainbow-like spectrum. The setup includes a prism placed on a stand, through which white light is passed, and the resulting spectrum is projected onto a screen. This experiment was pivotal in the development of modern optics and the understanding of light as a wave phenomenon.
+
+=== ADVERSARIAL OUTPUT ===
+This image depicts an illustration of Sir Isaac Newton conducting his famous experiment to demonstrate the dispersion of light into its constituent colors, forming a rainbow-like spectrum. The setup includes a prism placed on a stand, through which white light is passed. The light is then refracted and dispersed into a spectrum of colors, which can be seen on the wall behind the prism. Newton's assistant is observing the phenomenon, and various scientific instruments and notes are visible in the background, indicating a laboratory setting. This experiment was pivotal in the development of modern optics and the understanding of light.

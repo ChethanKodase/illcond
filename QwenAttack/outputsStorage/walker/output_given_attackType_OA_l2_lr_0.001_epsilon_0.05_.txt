@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a vast, flat landscape that appears to be a salt flat, likely the Salar de Uyuni in Bolivia, which is known for its mirror-like surface that reflects the sky and clouds above. The person in the image is walking across the salt flat, and the reflection of the clouds creates a surreal effect, making it look as though the clouds are floating above the ground. The sky is partly cloudy with patches of blue visible, adding to the dramatic and serene atmosphere of the scene.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a digital or artistic representation of a person standing on a surface that looks like a map or a grid, with various symbols and icons scattered around. The person seems to be looking at the symbols, which could represent different locations, points of interest, or data points. The overall aesthetic suggests it might be related to navigation, travel, or data visualization. The background includes a mix of blue and white colors, possibly indicating water bodies or sky, adding to the theme of exploration or mapping.

@@ -1,0 +1,13 @@
+=== CLEAN OUTPUT ===
+The image depicts a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a collage of various scenes, possibly from a travel or lifestyle blog. It includes:
+
+1. A beach scene with a person standing on the sand.
+2. A close-up of a person's hand holding a small object, possibly a piece of jewelry or a ring.
+3. A person sitting at a table with food and drinks, suggesting a dining or social setting.
+4. A person standing in front of a window, looking out.
+5. A person holding a camera, indicating they might be taking photos.
+
+The overall theme seems to be related to travel, lifestyle, or personal experiences.

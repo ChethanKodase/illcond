@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two golden retriever puppies sitting on a grassy area covered with orange flower petals. The puppies appear to be happy and are looking directly at the camera. The background is a blurred green, suggesting an outdoor setting, possibly a park or a garden.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a close-up of a piece of paper or a document with text printed on it. The text is quite small and dense, making it difficult to read the specific content. However, the text seems to be in a structured format, possibly a table or a list, with some entries aligned vertically. The background of the image is blurred, which suggests that the focus is on the text itself. The style of the text and its layout might indicate that it could be part of a scientific paper, a technical report, or a detailed document.

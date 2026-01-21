@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The spacecraft looks like it has crashed into the water, suggesting a dramatic or catastrophic event. The overall atmosphere is somber and tense, indicating a serious situation.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two individuals standing on a platform or structure that appears to be floating on water. The platform has a transparent or semi-transparent cover, and the individuals seem to be wearing protective gear, possibly for safety or to shield them from the elements. The background suggests an outdoor setting with water, which could indicate they are in a lake, river, or other body of water. The overall scene gives the impression of a controlled environment, perhaps for scientific research, a demonstration, or an educational activity.

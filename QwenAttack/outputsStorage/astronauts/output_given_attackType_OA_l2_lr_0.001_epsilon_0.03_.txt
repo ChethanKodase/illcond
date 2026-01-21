@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a composite or digitally altered photograph. It shows two individuals standing on what looks like a beach or coastal area, with one person wearing a suit that resembles a spacesuit. The background includes a blurred view of a cityscape and some text, which might be part of the digital manipulation. The overall effect gives the impression of a surreal or staged scene, possibly for artistic or conceptual purposes.

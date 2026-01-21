@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a scene from a video game or a digital artwork. It depicts a character standing on a platform with a large, futuristic structure in the background. The structure has a design that resembles a bridge or a tower with multiple levels and sections. The character is wearing a suit that looks like it could be for space or high-tech environments, suggesting a sci-fi theme. The overall setting seems to be an alien planet or a futuristic cityscape.

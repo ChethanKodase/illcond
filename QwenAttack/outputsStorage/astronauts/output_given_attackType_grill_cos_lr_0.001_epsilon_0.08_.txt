@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+A bright yellow school bus is parked on the side of a road, with its side door open. The bus has a classic design with large windows and a red roof. There are no visible passengers or drivers inside the bus from this angle. The background shows a clear blue sky and some greenery, suggesting it might be a sunny day.

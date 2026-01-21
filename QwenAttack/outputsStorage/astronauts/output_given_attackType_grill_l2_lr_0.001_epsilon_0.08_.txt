@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a composite or manipulated photograph that combines elements from different sources. It features a person wearing a white hooded garment, possibly a rowing shell, with a background that includes elements of a boat and water, suggesting a rowing context. The background also contains some text and graphics that seem to be part of a digital interface or digital art, which may not be directly related to the main subject of the photo. The overall composition gives an impression of a digital collage or a creative manipulation of images.

@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows a serene sunset scene over a calm body of water. A small fishing boat is anchored in the water, with its reflection visible on the surface. The sky is painted with vibrant hues of orange, pink, and yellow, indicating that the sun is either setting or rising. The overall atmosphere is peaceful and picturesque, capturing the beauty of nature at dusk or dawn.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a sunset or sunrise scene with a clear sky and a few clouds. The sun is partially visible on the horizon, casting warm colors across the sky, which include shades of orange, yellow, and pink. The landscape appears to be a natural setting, possibly a beach or open field, as there are no prominent structures or buildings in the foreground. The overall atmosphere is serene and peaceful, typical of a tranquil outdoor environment during the golden hour.

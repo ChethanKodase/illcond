@@ -1,0 +1,7 @@
+=== CLEAN OUTPUT ===
+The image shows two side-by-side visualizations of what appears to be the first direct image of a black hole, captured by the Event Horizon Telescope (EHT). The left image is labeled "EHT," and the right image is labeled "EHT with PRIMO." Both images depict the shadow of a supermassive black hole at the center of the galaxy M87.
+
+The EHT collaboration used a technique called Very Long Baseline Interferometry (VLBI) to combine data from multiple radio telescopes around the world to create an image of the black hole's event horizon, which is the point of no return for light
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two side-by-side visualizations of the event horizon of a black hole, as observed by the Event Horizon Telescope (EHT). The left image is labeled "EHT," and the right image is labeled "EHT with PRIMO." Both images depict the characteristic ring-like structure around the central dark region, which is believed to be the event horizon of a supermassive black hole. The differences between the two images may represent improvements or refinements in the imaging technique or data processing, as indicated by the label "PRIMO" on the right image. PRIMO likely stands for "Polarimetric Radio Interfer

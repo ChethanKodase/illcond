@@ -1,0 +1,7 @@
+=== CLEAN OUTPUT ===
+The image depicts an illustration of Sir Isaac Newton conducting his famous experiment to demonstrate the dispersion of white light into its constituent colors using a prism. In the image, Newton is shown holding a prism and directing a beam of white light through it. The light is then projected onto a wall or screen, where it appears as a spectrum of colors, including red, orange, yellow, green, blue, and violet. This experiment was pivotal in establishing the theory that white light is composed of all the colors of the rainbow. The setting appears to be a laboratory with various scientific instruments and equipment visible in the background.
+
+=== ADVERSARIAL OUTPUT ===
+The image depicts a historical scene involving the use of a spectroscope, which was an early instrument used to study the spectrum of light emitted by various substances. The setup includes a prism that disperses light into its constituent colors, creating a spectrum on a screen or wall. This was a common method for analyzing the composition of light and materials during the 19th century.
+
+In the image, there are two individuals observing the spectrum through a telescope-like device, which is likely a spectroscope. The room appears to be a laboratory or observatory, equipped with various scientific instruments and tools. The presence of books and other equipment suggests a setting

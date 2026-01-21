@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image shows two side-by-side visualizations of what appears to be the first direct image of a black hole, captured by the Event Horizon Telescope (EHT). The left image is labeled "EHT," and the right image is labeled "EHT with PRIMO." Both images depict a bright ring-like structure with a dark center, which is characteristic of the event horizon of a black hole. The "PRIMO" in the right image likely refers to a technique or model used to enhance or refine the image, as PRIMO stands for "Perturbative Reconstruction of Images from Multiple Observations." This enhancement could help in improving
+
+=== ADVERSARIAL OUTPUT ===
+The画像には、青い背景に白い文字で「THE JEWELRY STORE」の文字が書かれた看板が描かれています。また、その下には「Jewelry」という文字が書かれた小さな看板があります。全体的にシンプルなデザインで、店舗の名前や商品の種類を示しています。

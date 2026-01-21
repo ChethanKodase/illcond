@@ -1,0 +1,16 @@
+=== CLEAN OUTPUT ===
+The image depicts a vast, flat landscape that appears to be a salt flat, likely the Salar de Uyuni in Bolivia, which is known for its mirror-like surface that reflects the sky and clouds above. The sky is filled with large, fluffy clouds, and their reflection can be seen on the smooth, white surface of the salt flat. A person is walking across the salt flat, adding a sense of scale to the immense expanse of the landscape. The scene is serene and breathtaking, showcasing the unique beauty of this natural wonder.
+
+=== ADVERSARIAL OUTPUT ===
+This image appears to be an abstract or surreal composition that combines elements of nature and human activity. Here's a breakdown:
+
+1. **Foreground Elements**:
+   - A person walking, seemingly in a natural setting.
+   - The person is holding what looks like a large, abstract object resembling a cloud or a cluster of white, fluffy shapes.
+
+2. **Background Elements**:
+   - A cloudy sky with various shades of blue and white.
+   - The ground seems to have a mix of earthy tones, possibly representing grass or dirt.
+
+3. **Abstract Elements**:
+   - The large, cloud-like object the person is holding

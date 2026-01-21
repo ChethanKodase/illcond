@@ -1,0 +1,7 @@
+=== CLEAN OUTPUT ===
+The image shows two side-by-side visualizations of what appears to be the first direct image of a black hole, captured by the Event Horizon Telescope (EHT). The left image is labeled "EHT," and the right image is labeled "EHT with PRIMO." Both images depict a bright ring-like structure with a dark center, which is characteristic of the event horizon of a black hole. The "PRIMO" in the right image likely refers to a technique or model used to enhance or refine the image, as PRIMO stands for "Perturbative Reconstruction of Images from Multiple Observations." This enhancement could help in improving
+
+=== ADVERSARIAL OUTPUT ===
+The image appears to be a split-screen showing two different views of a similar scene, possibly from a video game or a simulation. The left side shows a close-up view of what looks like a mechanical or robotic arm with a red and black color scheme. The right side shows a wider view of the same scene, revealing more of the environment, which includes a dark background with some indistinct shapes and patterns that could be part of the game's interface or a virtual environment.
+
+Given the context and the style, it might be from a first-person shooter game or a simulation where the player is interacting with a robotic or mechanical device. The

@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts a serene and picturesque landscape, likely a golf course or a well-maintained park. It features a lush green lawn with vibrant purple flowers in the foreground, which appear to be azaleas. A small body of water, possibly a pond or a lake, is visible in the middle ground, with a bridge crossing over it. The background is filled with more greenery and trees, creating a tranquil and inviting atmosphere. The sky is clear and blue, suggesting a sunny day.
+
+=== ADVERSARIAL OUTPUT ===
+The image depicts a serene landscape with a golf course. The foreground features a lush green golf course with well-maintained fairways and sand traps. In the background, there are trees and a clear blue sky, indicating a pleasant day. The image also shows a golf ball in mid-air, suggesting that someone might be playing golf or practicing their swing. The overall scene conveys a sense of tranquility and leisure associated with golfing.

@@ -1,0 +1,5 @@
+=== CLEAN OUTPUT ===
+The image depicts two astronauts in space suits walking through shallow water towards a partially submerged spacecraft. The scene appears to be from a science fiction movie or a dramatic reenactment, given the realistic depiction of the astronauts and the setting. The atmosphere suggests a post-disaster scenario where the spacecraft has crashed into the water.
+
+=== ADVERSARIAL OUTPUT ===
+The image shows a person wearing a white outfit, possibly a costume or a uniform, standing in front of a large, dark structure that appears to be part of an amusement park ride or attraction. The background includes other people and what looks like a themed environment with decorations and lighting. The setting suggests it could be at a theme park or a similar entertainment venue.
