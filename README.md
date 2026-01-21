@@ -43,23 +43,38 @@ pipenv install -r requirements.txt
 </pre>
 
 
-#### To run universal adversarial attacks on NVAE
+#### To select the GPU visibility activate the environment and open the illcond directory
+
 
 <pre>
-```
-conda deactivate
-conda deactivate
-conda deactivate
 export CUDA_VISIBLE_DEVICES=4
 cd NVAE/
 source nvaeenv1/bin/activate
 cd ..
 cd illcond/
-python nvae/nvae_all_kids_of_attacks_universal.py --attck_type "la_l2_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/nvae_all_kids_of_attacks_universal.py --attck_type "la_wass_kf_cr" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/nvae_all_kids_of_attacks_universal.py --attck_type "la_cos_kf_cr" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/nvae_all_kids_of_attacks_universal.py --attck_type "grill_l2_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/nvae_all_kids_of_attacks_universal.py --attck_type "grill_wass_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/nvae_all_kids_of_attacks_universal.py --attck_type "grill_cos_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+</pre>
+
+
+
+#### To run universal adversarial attacks on NVAE
+
+To save condition numbers to use in GRILL
+
+<pre>
+python nvae/NvaeSaveConditionNumbers.py --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+</pre>
+
+To run all attacks
+
+<pre>
+```
+python nvae/NvaeAllUniversalAttacks.py --attck_type "la_l2_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "la_wass_kf_cr" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "la_cos_kf_cr" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 ```
 </pre>
+
+
