@@ -74,13 +74,14 @@ python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf" --desired_nor
 ```
 </pre>
 
-### To get output distortion distributions for universal attacks on NVAEs
+### To get output distortion distributions across perturbations for universal attacks on NVAEs
 
 <pre>
 ```
 python nvae/NvaeDeviationsDistributionsAcrossPerturbations.py 
 ```
 </pre>
+
 
 #### To run universal adaptive attacks on NVAE
 
@@ -91,8 +92,9 @@ python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_wass_kf_mcmc"
 ```
 </pre>
 
+#### To get output distortion distributions across perturbations plots for universal adaptive attacks on NVAE
 
-
+python nvae/NvaeDeviationsDistributionsAcrossPerturbationsForAdaptiveAttacks.py
 
 
 #### To run sample specific attacks on NVAE
