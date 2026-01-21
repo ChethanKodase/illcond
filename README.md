@@ -111,6 +111,16 @@ python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "grill_cos_kf_SS" --des
 ```
 </pre>
 
+##### To get sample specific attack qualitative results 
+
+<pre>
+```
+python nvae/NvaeSampleSpecificQualitativePlotsForCLassicAttacks.py --desired_norm_l_inf 0.03 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeSampleSpecificQualitativePlotsForCLassicAttacks.py --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeSampleSpecificQualitativePlotsForCLassicAttacks.py --desired_norm_l_inf 0.01 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+```
+</pre>
+
 #### To run layer weighting ablations on NVAE
 <pre>
 ```
