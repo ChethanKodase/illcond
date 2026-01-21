@@ -82,6 +82,17 @@ python nvae/NvaeDeviationsDistributionsAcrossPerturbations.py
 ```
 </pre>
 
+#### To run universal adaptive attacks on NVAE
+
+<pre>
+```
+python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "la_l2_kf_mcmc" --desired_norm_l_inf 0.037 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_wass_kf_mcmc" --desired_norm_l_inf 0.09 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+```
+</pre>
+
+
+
 
 
 #### To run sample specific attacks on NVAE
@@ -95,5 +106,14 @@ python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "grill_l2_kf_SS" --desi
 python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "grill_wass_kf_SS" --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllSampleSpecificAttacks.py --attck_type "grill_cos_kf_SS" --desired_norm_l_inf 0.02 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 
+```
+</pre>
+
+#### To run layer weighting ablations on NVAE
+<pre>
+```
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_mcmc" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoin
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_mcmc_eqwts" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_mcmc_rndwts" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 ```
 </pre>
