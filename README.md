@@ -159,3 +159,10 @@ python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_l2_mcmc_rndwt
 ```
 </pre>
 
+
+#### To get the convergence plots for NVAE
+<pre>
+```
+python nvae/NvaeGetConvergencePlots.py
+```
+</pre>
