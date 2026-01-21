@@ -55,6 +55,14 @@ cd illcond/
 
 #### To run universal adversarial attacks on NVAE
 
+###### To get NVAE encoder condition number plots
+
+<pre>
+```
+python nvae/NvaeConditionNumberSingularValuesPlotsForTheEncoder.py
+```
+<pre>
+
 To save condition numbers to use in GRILL
 
 <pre>
