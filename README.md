@@ -1,7 +1,4 @@
-# illcond
-
-GRILL: Restoring Gradient Signal in Ill-Conditioned Layers for More Effective
-Adversarial Attacks on Autoencoders
+# GRILL: Restoring Gradient Signal in Ill-Conditioned Layers for More Effective Adversarial Attacks on Autoencoders
 
 
 # Code for NVAE attacks
