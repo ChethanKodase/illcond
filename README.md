@@ -289,3 +289,6 @@ python QwenAttack/QwenUntargetedAttacks.py --attck_type OA_wass --desired_norm_l
 Repeat the same for other values of $L_\inf$ norms and other data samples by updating --desired_norm_l_inf and --sampleName . Use blackHole, boat, cheetah, light, walker and nature which are already available as images in the repository.
 
 
+##### To plot the layerwise singular values and condition number 
+
+`python QwenAttack/qwen2p5Conditioning.py`
