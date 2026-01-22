@@ -292,3 +292,64 @@ Repeat the same for other values of $L_\inf$ norms and other data samples by upd
 ##### To plot the layerwise singular values and condition number 
 
 `python QwenAttack/qwen2p5Conditioning.py`
+
+
+
+
+# Code for DiffAE attacks
+
+#### Install the conda environment required and activate:
+
+
+<pre>
+```
+conda env create -f environment2.yml
+cd alma
+conda activate your_diffae_environment
+```
+</pre>
+
+To run universal attacks on DIffAE
+
+<pre>
+```
+cd illcond
+conda activate dt2
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_l2_kfAdamNoScheduler1 --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_wass_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_cos_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_l2_kfAdamNoScheduler1 --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_wass_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_cos_kfAdamNoScheduler1 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+```
+</pre>
+
+#### To run adaptive attacks on DiffAE
+
+<pre>
+```
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type grill_cos_kfAdamNoScheduler1_mcmc --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type la_cos_kfAdamNoScheduler1_mcmc --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+```
+</pre>
+
+
+#### To run layerweight ablations 
+
+
+<pre>
+```
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr1 --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_rnd1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_unif1 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+```
+</pre>
+
+#### To get histogram plots for ablations run 
+
+<pre>
+```
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type la_cos_pr --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_rnd1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+```
+</pre>

@@ -6,64 +6,16 @@
 
 '''
 
-
-
-
-####################################################################################################################################################################################################################################################################################
-
-
-
-
-cd alma
-conda activate dt2
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_l2_kfAdamNoScheduler1 --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.19 --attck_type la_l2_kfAdamNoScheduler1 --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type la_l2_kfAdamNoScheduler1 --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-
-
-
-## pending
-cd alma
-conda activate dt2
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_wass_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.19 --attck_type la_wass_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type la_wass_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-
-
-cd alma
-conda activate dt2
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_cos_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.19 --attck_type la_cos_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type la_cos_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-
-
-
-cd alma
-conda activate dt2
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_l2_kfAdamNoScheduler1 --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.19 --attck_type grill_l2_kfAdamNoScheduler1 --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type grill_l2_kfAdamNoScheduler1 --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-
-
-## pending
-cd alma
-conda activate dt2
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_wass_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.19 --attck_type grill_wass_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type grill_wass_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-
-
 cd illcond
 conda activate dt2
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.5 --attck_type grill_cos_kfAdamNoScheduler1 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.19 --attck_type grill_cos_kfAdamNoScheduler1 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type grill_cos_kfAdamNoScheduler1 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.5 --attck_type la_l2_kfAdamNoScheduler1 --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_wass_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_cos_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_l2_kfAdamNoScheduler1 --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_wass_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_cos_kfAdamNoScheduler1 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
 
 
-
-
-### universal attacks end
-####################################################################################################################################################################################################################################################################################
 
 ####################################################################################################################################################################################################################################################################################
 ################################### weights abalation
@@ -92,14 +44,14 @@ python diffae/review_plotting.py
 
 
 
-
+####################################################################################################################################################################################################################################################################################
 
 ############# Adaptive attacks MCMC ################
 Final adaptive 21 Nov
 
 
 
-cd alma
+cd illcond
 conda activate dt2
 python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type grill_cos_kfAdamNoScheduler1_mcmc --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
 python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type la_cos_kfAdamNoScheduler1_mcmc --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
@@ -180,13 +132,13 @@ for source_im in train_loader:
     batch = source_im['img'].to(device)
     batch_list.append(batch)  # Store batch in a list
     #print("len(batch_list)", len(batch_list))
-    #if(len(batch_list)==3):
-        #break
+    if(len(batch_list)==3):
+        break
 
 mi, ma = batch.min(), batch.max()
 
 
-big_tensor = torch.stack(batch_list)  
+big_tensor = torch.stack(batch_list)  # This we do to put all the images into the GPU so that there is no latency due to communication between CPU and GPU during optimization
 print("big_tensor.shape", big_tensor.shape)
 del batch_list
 del train_loader
@@ -197,12 +149,6 @@ source_im = data[0]['img'][None].to(device)
 
 import matplotlib.pyplot as plt
 import os
-# Construct the file path
-#file_path = f"diffae/noise_storage/DiffAE_attack_type{attck_type}_norm_bound_{desired_norm_l_inf}_.pt"
-
-#source_segment = 0
-
-#file_path = f"../diffae/attack_run_time_univ/attack_noise/DiffAE_attack_typelatent_cosine_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".pt"
 
 
 
@@ -1183,36 +1129,6 @@ def get_combined_SKL_loss(normalized_attacked, source_im):
     return encoder_lip_sum * get_symmetric_KLDivergence(embed, attacked_embed) 
 
 
-if(attck_type == "la_l2"):
-    adv_div_list = []
-    for step in range(155):
-        batch_step = 0
-        for source_im in big_tensor:
-            current_L_inf_norm = torch.norm(noise_addition, p=float('inf'))
-            scaled_noise = noise_addition * (desired_norm_l_inf / current_L_inf_norm) 
-            attacked = (source_im + scaled_noise)
-            normalized_attacked = ( source_im.max() - source_im.min() ) * ((attacked-attacked.min())/(attacked.max()-attacked.min()))  + source_im.min() 
-
-            loss_to_maximize = get_latent_space_l2_loss(normalized_attacked, source_im)
-
-            total_loss = -1 * loss_to_maximize
-            total_loss.backward()
-            optimizer.step()
-            optimizer.zero_grad()
-        print("step", step)
-        if(step%50==0):
-            with torch.no_grad():
-                normalized_attacked = normalized_attacked[0].unsqueeze(0)
-                attacked_embed = model.encode(normalized_attacked.to(device))
-                xT_ad = model.encode_stochastic(normalized_attacked.to(device), attacked_embed, T=250)
-                adv_gen = model.render(xT_ad, attacked_embed, T=20)
-                l_inf_distortion = torch.norm(scaled_noise, p=float('inf'))
-                l2_distortion = torch.norm(scaled_noise, p=2)
-                deviation = torch.norm(adv_gen - source_im, p=2)
-                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, scaled_noise, adv_gen)
-
-
-
 
 
 
@@ -1372,6 +1288,8 @@ if(attck_type == "la_cos_kfAdamNoScheduler1_mcmc"):
 
 
 
+
+
 if(attck_type == "grill_cos_kfAdamNoScheduler1"):
     adv_div_list = []
     for step in range(155):
@@ -1411,7 +1329,6 @@ if(attck_type == "grill_cos_kfAdamNoScheduler1"):
                 l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
                 deviation = torch.norm(adv_gen - source_im, p=2)
                 get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, noise_addition, adv_gen)
-
 
 
 
@@ -1455,7 +1372,6 @@ if(attck_type == "grill_cos_kfAdamNoScheduler1_mcmc"):
                 l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
                 deviation = torch.norm(adv_gen - source_im, p=2)
                 get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, noise_addition, adv_gen)
-
 
 
 
@@ -1539,4 +1455,386 @@ if(attck_type == "grill_wass_kfAdamNoScheduler1"):
                 l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
                 deviation = torch.norm(adv_gen - source_im, p=2)
                 get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, noise_addition, adv_gen)
+
+
+
+
+
+
+if(attck_type == "la_cos_pr"):
+    adv_div_list = []
+    all_grad_norms = []
+    for step in range(155):
+        batch_step = 0
+        count_batch = 0
+        for source_im in big_tensor:
+            current_L_inf_norm = torch.norm(noise_addition, p=float('inf'))
+            scaled_noise = noise_addition * (desired_norm_l_inf / current_L_inf_norm) 
+            attacked = (source_im + scaled_noise)
+            normalized_attacked = ( source_im.max() - source_im.min() ) * ((attacked-attacked.min())/(attacked.max()-attacked.min()))  + source_im.min() 
+
+            loss_to_maximize = (get_latent_space_cosine_loss(normalized_attacked, source_im)-1.0)**2 
+
+            total_loss = -1 * loss_to_maximize
+            total_loss.backward()
+            if (step%5 ==0 and count_batch==0):
+                print("noise_addition.grad.shape", noise_addition.grad.shape)
+                print("noise_addition.max()", noise_addition.max())
+                print("noise_addition.max()", noise_addition.min())
+                grad_l2_norm = torch.norm(noise_addition.grad, p=2)
+                all_grad_norms.append(grad_l2_norm.item())
+                np.save("diffae/grad_distribution/grad_norms_list_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", all_grad_norms)
+
+                print("grad_l2_norm", grad_l2_norm)
+                plt.figure(figsize=(8, 5))
+                plt.plot(all_grad_norms, marker='o', linestyle='-')
+                plt.title("L2 Norm of Gradient Over Optimization Steps")
+                plt.xlabel("Step")
+                plt.ylabel("L2 Norm of ∇(loss) w.r.t noise_addition")
+                plt.grid(True)
+                plt.tight_layout()
+                plt.savefig("diffae/grad_distribution/GradL2Norm_vs_Steps_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".png")
+                plt.show()
+                plt.close()
+
+                grad_values = noise_addition.grad.detach().cpu().numpy().flatten()
+                np.save("diffae/grad_distribution/grad_values_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", grad_values)
+
+                grad_matrix = noise_addition.grad.view(256, -1).detach().cpu().numpy()  # shape (3, 256*256)
+                U, S, Vt = np.linalg.svd(grad_matrix, full_matrices=False)
+
+                plt.semilogy(S)
+                #plt.plot(S)
+                plt.title("Singular Values of Gradient")
+                plt.xlabel("Component")
+                plt.ylabel("Singular Value (log scale)")
+                plt.grid(True)
+                plt.show()
+                plt.savefig("diffae/grad_distribution/SVD_stretch_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+"_.png")   #####this
+                plt.close()
+
+                np.save("diffae/grad_distribution/stretch_values_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", S)
+
+
+                plt.figure(figsize=(8, 5))
+                plt.hist(grad_values, bins=100, range=(-0.001, 0.001), density=False, alpha=0.75)
+                plt.title("Gradient Distribution of loss wrt perturbation tensor")
+                plt.xlabel("Gradient Value")
+                plt.ylabel("Frequency")
+                plt.grid(True)
+
+                ax = plt.gca()
+                ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.0e'))  # Formats as 1e-4, 1e-5, etc.
+
+                plt.xticks(rotation=45)
+
+                plt.show()
+                plt.savefig("diffae/grad_distribution/Histogram_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+"_.png")   #####this
+                plt.close()
+
+            count_batch+=1
+            optimizer.step()
+            optimizer.zero_grad()
+        print("step", step)
+        if(step%50==0  and step!=0):
+            with torch.no_grad():
+                attacked_embed = model.encode(normalized_attacked.to(device))
+                xT_ad = model.encode_stochastic(normalized_attacked.to(device), attacked_embed, T=250)
+                adv_gen = model.render(xT_ad, attacked_embed, T=20)
+                l_inf_distortion = torch.norm(scaled_noise, p=float('inf'))
+                l2_distortion = torch.norm(scaled_noise, p=2)
+                deviation = torch.norm(adv_gen - source_im, p=2)
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, scaled_noise, adv_gen)
+
+
+
+if(attck_type == "grill_cos_pr1"):
+    adv_div_list = []
+    all_grad_norms = []
+    for step in range(155):
+        count_batch = 0
+        for source_im in big_tensor:
+            normalized_attacked = (source_im + (noise_addition * (desired_norm_l_inf / (torch.norm(noise_addition, p=float('inf')))) ))
+            normalized_attacked = ( source_im.max() - source_im.min() ) * ((normalized_attacked-normalized_attacked.min())/(normalized_attacked.max()-normalized_attacked.min()))  + source_im.min() 
+            total_loss = -1 * get_combined_cosine_loss_cond(normalized_attacked, source_im)
+            total_loss.backward()
+
+            if (step%5 ==0 and count_batch==0):
+                print("noise_addition.grad.shape", noise_addition.grad.shape)
+                print("noise_addition.max()", noise_addition.max())
+                print("noise_addition.max()", noise_addition.min())
+                grad_l2_norm = torch.norm(noise_addition.grad, p=2)
+                print("grad_l2_norm", grad_l2_norm)
+                all_grad_norms.append(grad_l2_norm.item())
+                np.save("diffae/grad_distribution/grad_norms_list_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", all_grad_norms)
+                print("grad_l2_norm", grad_l2_norm)
+                plt.figure(figsize=(8, 5))
+                plt.plot(all_grad_norms, marker='o', linestyle='-')
+                plt.title("L2 Norm of Gradient Over Optimization Steps")
+                plt.xlabel("Step")
+                plt.ylabel("L2 Norm of ∇(loss) w.r.t noise_addition")
+                plt.grid(True)
+                plt.tight_layout()
+                plt.savefig("diffae/grad_distribution/GradL2Norm_vs_Steps_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".png")
+                plt.show()
+                plt.close()
+
+
+
+                grad_values = noise_addition.grad.detach().cpu().numpy().flatten()
+                np.save("diffae/grad_distribution/grad_values_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", grad_values)
+
+                grad_matrix = noise_addition.grad.view(256, -1).detach().cpu().numpy()  # shape (3, 256*256)
+                U, S, Vt = np.linalg.svd(grad_matrix, full_matrices=False)
+
+                plt.semilogy(S)
+                #plt.plot(S)
+                plt.title("Singular Values of Gradient")
+                plt.xlabel("Component")
+                plt.ylabel("Singular Value (log scale)")
+                plt.grid(True)
+                plt.show()
+                plt.savefig("diffae/grad_distribution/SVD_stretch_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+"_.png")   #####this
+                plt.close()
+
+                np.save("diffae/grad_distribution/stretch_values_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", S)
+
+                plt.figure(figsize=(8, 5))
+                plt.hist(grad_values, bins=100, range=(-0.001, 0.001), density=False, alpha=0.75)
+                plt.title("Gradient Distribution of loss wrt perturbation tensor")
+                plt.xlabel("Gradient Value")
+                plt.ylabel("Frequency")
+                plt.grid(True)
+
+                ax = plt.gca()
+                ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.0e'))  # Formats as 1e-4, 1e-5, etc.
+
+                plt.xticks(rotation=45)
+
+                plt.tight_layout()  # Adjust layout to avoid overlap
+
+                plt.show()
+                plt.savefig("diffae/grad_distribution/Histogram_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+"_.png")   #####this
+                plt.close()
+
+            count_batch+=1
+            optimizer.step()
+            optimizer.zero_grad()
+        print("step", step)
+        if(step%10==0):
+            print("step", step)
+            with torch.no_grad():
+                attacked_embed = model.encode(normalized_attacked.to(device))
+                xT_ad = model.encode_stochastic(normalized_attacked.to(device), attacked_embed, T=250)
+                adv_gen = model.render(xT_ad, attacked_embed, T=20)
+
+                source_embed = model.encode(source_im.to(device))
+                xT_sc = model.encode_stochastic(source_im.to(device), source_embed, T=250)
+                sc_gen = model.render(xT_sc, source_embed, T=20)
+
+                scaled_noise = noise_addition * (desired_norm_l_inf / (torch.norm(noise_addition, p=float('inf')))) 
+                l_inf_distortion = torch.norm(scaled_noise, p=float('inf'))
+                l2_distortion = torch.norm(scaled_noise, p=2)
+                #deviation = torch.norm(adv_gen - source_im, p=2)
+                per_image_l2 = torch.norm(adv_gen - sc_gen, p=2, dim=(1, 2, 3))
+                deviation = per_image_l2.mean()
+                print("deviation", deviation)
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, scaled_noise, adv_gen)
+
+            ####### post reviews ###########
+
+
+
+
+
+if(attck_type == "grill_cos_pr_rnd1"):
+    adv_div_list = []
+    all_grad_norms = []
+    for step in range(155):
+        count_batch = 0
+        for source_im in big_tensor:
+            normalized_attacked = (source_im + (noise_addition * (desired_norm_l_inf / (torch.norm(noise_addition, p=float('inf')))) ))
+            normalized_attacked = ( source_im.max() - source_im.min() ) * ((normalized_attacked-normalized_attacked.min())/(normalized_attacked.max()-normalized_attacked.min()))  + source_im.min() 
+            total_loss = -1 * get_combined_cosine_loss_cond_rnd(normalized_attacked, source_im)
+            total_loss.backward()
+
+            if (step%5 ==0 and count_batch==0):
+                print("noise_addition.grad.shape", noise_addition.grad.shape)
+                print("noise_addition.max()", noise_addition.max())
+                print("noise_addition.max()", noise_addition.min())
+                grad_l2_norm = torch.norm(noise_addition.grad, p=2)
+                print("grad_l2_norm", grad_l2_norm)
+                all_grad_norms.append(grad_l2_norm.item())
+                np.save("diffae/grad_distribution/grad_norms_list_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", all_grad_norms)
+                print("grad_l2_norm", grad_l2_norm)
+                plt.figure(figsize=(8, 5))
+                plt.plot(all_grad_norms, marker='o', linestyle='-')
+                plt.title("L2 Norm of Gradient Over Optimization Steps")
+                plt.xlabel("Step")
+                plt.ylabel("L2 Norm of ∇(loss) w.r.t noise_addition")
+                plt.grid(True)
+                plt.tight_layout()
+                plt.savefig("diffae/grad_distribution/GradL2Norm_vs_Steps_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".png")
+                plt.show()
+                plt.close()
+
+
+
+                grad_values = noise_addition.grad.detach().cpu().numpy().flatten()
+                np.save("diffae/grad_distribution/grad_values_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", grad_values)
+
+                grad_matrix = noise_addition.grad.view(256, -1).detach().cpu().numpy()  # shape (3, 256*256)
+                U, S, Vt = np.linalg.svd(grad_matrix, full_matrices=False)
+
+                plt.semilogy(S)
+                #plt.plot(S)
+                plt.title("Singular Values of Gradient")
+                plt.xlabel("Component")
+                plt.ylabel("Singular Value (log scale)")
+                plt.grid(True)
+                plt.show()
+                plt.savefig("diffae/grad_distribution/SVD_stretch_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+"_.png")   #####this
+                plt.close()
+
+                np.save("diffae/grad_distribution/stretch_values_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", S)
+
+                plt.figure(figsize=(8, 5))
+                plt.hist(grad_values, bins=100, range=(-0.001, 0.001), density=False, alpha=0.75)
+                plt.title("Gradient Distribution of loss wrt perturbation tensor")
+                plt.xlabel("Gradient Value")
+                plt.ylabel("Frequency")
+                plt.grid(True)
+
+                ax = plt.gca()
+                ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.0e'))  # Formats as 1e-4, 1e-5, etc.
+
+                plt.xticks(rotation=45)
+
+                plt.tight_layout()  # Adjust layout to avoid overlap
+
+                plt.show()
+                plt.savefig("diffae/grad_distribution/Histogram_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+"_.png")   #####this
+                plt.close()
+
+            count_batch+=1
+            optimizer.step()
+            optimizer.zero_grad()
+        print("step", step)
+        if(step%10==0):
+            with torch.no_grad():
+                attacked_embed = model.encode(normalized_attacked.to(device))
+                xT_ad = model.encode_stochastic(normalized_attacked.to(device), attacked_embed, T=250)
+                adv_gen = model.render(xT_ad, attacked_embed, T=20)
+
+                source_embed = model.encode(source_im.to(device))
+                xT_sc = model.encode_stochastic(source_im.to(device), source_embed, T=250)
+                sc_gen = model.render(xT_sc, source_embed, T=20)
+
+                scaled_noise = noise_addition * (desired_norm_l_inf / (torch.norm(noise_addition, p=float('inf')))) 
+                l_inf_distortion = torch.norm(scaled_noise, p=float('inf'))
+                l2_distortion = torch.norm(scaled_noise, p=2)
+                #deviation = torch.norm(adv_gen - source_im, p=2)
+                per_image_l2 = torch.norm(adv_gen - sc_gen, p=2, dim=(1, 2, 3))
+                deviation = per_image_l2.mean()
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, scaled_noise, adv_gen)
+
+            ####### post reviews ###########
+
+
+
+
+if(attck_type == "grill_cos_pr_unif1"):
+    adv_div_list = []
+    all_grad_norms = []
+    for step in range(155):
+        count_batch = 0
+        for source_im in big_tensor:
+            normalized_attacked = (source_im + (noise_addition * (desired_norm_l_inf / (torch.norm(noise_addition, p=float('inf')))) ))
+            normalized_attacked = ( source_im.max() - source_im.min() ) * ((normalized_attacked-normalized_attacked.min())/(normalized_attacked.max()-normalized_attacked.min()))  + source_im.min() 
+            total_loss = -1 * get_combined_cosine_loss_cond_unif(normalized_attacked, source_im)
+            total_loss.backward()
+
+            if (step%5 ==0 and count_batch==0):
+                print("noise_addition.grad.shape", noise_addition.grad.shape)
+                print("noise_addition.max()", noise_addition.max())
+                print("noise_addition.max()", noise_addition.min())
+                grad_l2_norm = torch.norm(noise_addition.grad, p=2)
+                print("grad_l2_norm", grad_l2_norm)
+                all_grad_norms.append(grad_l2_norm.item())
+                np.save("diffae/grad_distribution/grad_norms_list_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", all_grad_norms)
+                print("grad_l2_norm", grad_l2_norm)
+                plt.figure(figsize=(8, 5))
+                plt.plot(all_grad_norms, marker='o', linestyle='-')
+                plt.title("L2 Norm of Gradient Over Optimization Steps")
+                plt.xlabel("Step")
+                plt.ylabel("L2 Norm of ∇(loss) w.r.t noise_addition")
+                plt.grid(True)
+                plt.tight_layout()
+                plt.savefig("diffae/grad_distribution/GradL2Norm_vs_Steps_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".png")
+                plt.show()
+                plt.close()
+
+
+
+                grad_values = noise_addition.grad.detach().cpu().numpy().flatten()
+                np.save("diffae/grad_distribution/grad_values_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", grad_values)
+
+                grad_matrix = noise_addition.grad.view(256, -1).detach().cpu().numpy()  # shape (3, 256*256)
+                U, S, Vt = np.linalg.svd(grad_matrix, full_matrices=False)
+
+                plt.semilogy(S)
+                #plt.plot(S)
+                plt.title("Singular Values of Gradient")
+                plt.xlabel("Component")
+                plt.ylabel("Singular Value (log scale)")
+                plt.grid(True)
+                plt.show()
+                plt.savefig("diffae/grad_distribution/SVD_stretch_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+"_.png")   #####this
+                plt.close()
+
+                np.save("diffae/grad_distribution/stretch_values_"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+".npy", S)
+
+                plt.figure(figsize=(8, 5))
+                plt.hist(grad_values, bins=100, range=(-0.001, 0.001), density=False, alpha=0.75)
+                plt.title("Gradient Distribution of loss wrt perturbation tensor")
+                plt.xlabel("Gradient Value")
+                plt.ylabel("Frequency")
+                plt.grid(True)
+
+                ax = plt.gca()
+                ax.xaxis.set_major_formatter(ticker.FormatStrFormatter('%.0e'))  # Formats as 1e-4, 1e-5, etc.
+
+                plt.xticks(rotation=45)
+
+                plt.tight_layout()  # Adjust layout to avoid overlap
+
+                plt.show()
+                plt.savefig("diffae/grad_distribution/Histogram_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_step_"+str(step)+"_.png")   #####this
+                plt.close()
+
+            count_batch+=1
+            optimizer.step()
+            optimizer.zero_grad()
+        print("step", step)
+        if(step%10==0):
+            with torch.no_grad():
+                attacked_embed = model.encode(normalized_attacked.to(device))
+                xT_ad = model.encode_stochastic(normalized_attacked.to(device), attacked_embed, T=250)
+                adv_gen = model.render(xT_ad, attacked_embed, T=20)
+
+                source_embed = model.encode(source_im.to(device))
+                xT_sc = model.encode_stochastic(source_im.to(device), source_embed, T=250)
+                sc_gen = model.render(xT_sc, source_embed, T=20)
+
+                scaled_noise = noise_addition * (desired_norm_l_inf / (torch.norm(noise_addition, p=float('inf')))) 
+                l_inf_distortion = torch.norm(scaled_noise, p=float('inf'))
+                l2_distortion = torch.norm(scaled_noise, p=2)
+                #deviation = torch.norm(adv_gen - source_im, p=2)
+                per_image_l2 = torch.norm(adv_gen - sc_gen, p=2, dim=(1, 2, 3))
+                deviation = per_image_l2.mean()
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, scaled_noise, adv_gen)
+
+            ####### post reviews ###########
+
+
 
