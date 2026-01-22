@@ -5,3 +5,14 @@ nvae/SampleSpecificQualitativeResults/
 nvae/universal_qualitative/
 nvae/univ_attack_storage/
 nvae/grill_perturbation_analysis/
+nvae/NvaeConvergencePlots/
+nvae/__pycache__/
+nvae/all_universal_qualitative/
+nvae/allLayerLossPlots/
+nvae/all_universal_qualitative/
+nvae/deviation_store/
+nvae/extraCodeFiles/
+nvae/extrasFolders/
+nvae/saved_cond_nums/
+nvae/stepLayerLossstore/
+nvae/weighting_strategy_study/
