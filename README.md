@@ -353,3 +353,62 @@ python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_typ
 python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_rnd1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
 ```
 </pre>
+
+#### To run sample specific attacks on DiffAE
+
+<pre>
+```
+python diffae/DiffAEallSampleSpecificAttacks.py --desired_norm_l_inf 0.5 --attck_type la_l2_kfAdamNoScheduler1_SS --which_gpu 0 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallSampleSpecificAttacks.py--desired_norm_l_inf 0.03 --attck_type la_wass_kfAdamNoScheduler1_SS --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallSampleSpecificAttacks.py--desired_norm_l_inf 0.03 --attck_type la_cos_kfAdamNoScheduler1_SS --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallSampleSpecificAttacks.py--desired_norm_l_inf 0.03 --attck_type grill_l2_kfAdamNoScheduler1_SS --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallSampleSpecificAttacks.py--desired_norm_l_inf 0.03 --attck_type grill_wass_kfAdamNoScheduler1_SS --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallSampleSpecificAttacks.py--desired_norm_l_inf 0.03 --attck_type grill_cos_kfAdamNoScheduler1_SS --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+```
+</pre>
+
+
+
+#### To save universal attacks output distortion quantitatively
+
+
+<pre>
+```
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.18 --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+```
+</pre>
+
+#### To save universal attacks output distortion quantitatively for adaptive attacks
+
+
+<pre>
+```
+python diffae/DiffAEoutputDistortionStorageAfterAdaptiveAttacks.py --desired_norm_l_inf 0.18 --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+```
+</pre>
+
+
+#### To get output distortion plots for univeral attacks across perturbation budgets
+
+<pre>
+```
+python diffae/DiffAEDistortionDistributionPlotsForClassicUniversalAttacks.py --epsilon_list 0.21 0.22 0.23 0.24 0.25 0.26 0.27 0.28 0.29 0.30 0.31
+```
+</pre>
+
+#### To get output distortion plots for univeral adaptive attacks across perturbation budgets
+
+<pre>
+```
+python diffae/DiffAEOutPutDistortionDistributionPlotsForUniversalAdaptiveAttacks.py --epsilon_list 0.21 0.24 0.25 0.30 0.33 
+```
+</pre>
+
+#### To get DiffAE sample specific attacks qualitative plots
+
+<pre>
+```
+python diffae/DiffAESampleSpecificAttackQualitativePlots.py --desired_norm_l_inf 0.18 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+```
+</pre>
+
