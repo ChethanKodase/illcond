@@ -49,7 +49,6 @@ python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_wass_kf_mcmc"
 python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_wass_kf_mcmc" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 
 
-
 For testing condition based weights, equal weights, random weighhts 
 
 
@@ -61,9 +60,9 @@ cd NVAE/
 source nvaeenv1/bin/activate
 cd ..
 cd illcond/
-python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_mcmc" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoin
-python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_mcmc_eqwts" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_mcmc_rndwts" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_l2_mcmc" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoin
+python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_l2_mcmc_eqwts" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAdaptiveAttacks.py --attck_type "grill_l2_mcmc_rndwts" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 
 '''
 

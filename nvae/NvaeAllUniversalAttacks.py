@@ -48,17 +48,12 @@ cd NVAE/
 source nvaeenv1/bin/activate
 cd ..
 cd illcond/
-python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_noLast" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_allSum" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_5p" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_10p" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_30p" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_70p" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_30pRev" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_50pRev" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_70pRev" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_90pRev" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
-
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 
 
 

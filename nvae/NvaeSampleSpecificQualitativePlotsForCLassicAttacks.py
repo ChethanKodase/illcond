@@ -254,7 +254,7 @@ for ch in range(15):
         )
 
         plt.savefig(
-            f"SSqualitative/paperInd_{ch}_universal_NVAE_attacks_norm_bound_{desired_norm_l_inf}.png",
+            f"nvae/SampleSpecificQualitativeResults/paperInd_{ch}_universal_NVAE_attacks_norm_bound_{desired_norm_l_inf}.png",
             bbox_inches='tight',
             pad_inches=0.01
         )
