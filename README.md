@@ -18,7 +18,7 @@ Command Arguments:
 
 
 
-#### To create the environment and install dependencies for adversarial attacks on NVAAE
+#### To create the environment and install dependencies for adversarial attacks on NVAE
 
 <pre>
 ```
@@ -186,3 +186,106 @@ python nvae/NvaeGetConvergencePlots.py
 python nvae/NvaeLayerLossesPlotsSymlog.py 
 ```
 </pre>
+
+
+# Code for Qwen 2.5 attacks
+
+
+Here we perform evaluation of adversarial robustness of Qwen 2.5.
+
+
+Create a conda environment :
+
+`conda create -n QwenAttack python=3.10 -y`
+
+Activate :
+
+`conda activate QwenAttack`
+
+Run :
+
+`export PYTHONNOUSERSITE=1`
+
+Install torch and torchvision :
+
+`python -m pip install --index-url https://download.pytorch.org/whl/cu121 torch torchvision`
+
+
+Install other packages :
+
+```
+python -m pip install \
+  "transformers>=4.45.0" \
+  accelerate \
+  huggingface_hub \
+  pillow \
+  sentencepiece \
+  tiktoken \
+  einops \
+  "protobuf<5"
+
+```
+
+Install hugging face hub:
+
+`pip install huggingface_hub`
+
+
+Login with HF token: 
+
+`hf auth login` 
+
+
+Make a directory inside the repo:
+
+`mkdir Qwen2.5-VL-7B-Instruct`
+
+Paste the address of the above directory in the local_dir in the below command
+
+```
+
+python - << 'EOF'
+from huggingface_hub import snapshot_download
+
+snapshot_download(
+    repo_id="Qwen/Qwen2.5-VL-7B-Instruct",
+    local_dir="/home/luser/vlmAttack/Qwen2.5-VL-7B-Instruct",
+    local_dir_use_symlinks=False,
+)
+print("Download complete.")
+EOF
+
+
+```
+
+
+
+#### To do inference of the Qwen 2.5 model 
+
+Select the GPU and activate the environment 
+
+```
+export CUDA_VISIBLE_DEVICES=6
+conda deactivate
+cd illcond/
+conda activate QwenAttack
+export PYTHONNOUSERSITE=1
+```
+
+
+`python QwenAttack/Qwen2_5_Inference.py`
+
+#### to To perform sample specific adversarial attacks on Qwen 2.5 and save the results : 
+
+```
+python QwenAttack/QwenUntargetedAttacks.py --attck_type grill_cos --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
+python QwenAttack/QwenUntargetedAttacks.py --attck_type OA_cos --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
+python QwenAttack/QwenUntargetedAttacks.py --attck_type grill_l2 --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
+python QwenAttack/QwenUntargetedAttacks.py --attck_type OA_l2 --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
+python QwenAttack/QwenUntargetedAttacks.py --attck_type grill_wass --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
+python QwenAttack/QwenUntargetedAttacks.py --attck_type OA_wass --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
+```
+
+Repeat the same for other values of $L_\inf$ norms and other data samples by updating --desired_norm_l_inf and --sampleName . Use blackHole, boat, cheetah, light, walker and nature which are already available as images in the repository.
+
+
