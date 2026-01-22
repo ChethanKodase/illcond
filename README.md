@@ -412,3 +412,11 @@ python diffae/DiffAESampleSpecificAttackQualitativePlots.py --desired_norm_l_inf
 ```
 </pre>
 
+
+#### To get layerwise DiffAE condition number and singular values plots
+
+<pre>
+```
+python diffae/DiffAEconditionAnalysisPlots.py --which_gpu 7 --diffae_checkpoint diffae/checkpoints
+```
+</pre>
