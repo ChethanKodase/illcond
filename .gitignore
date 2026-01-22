@@ -1,3 +1,7 @@
 .env
 **/*token*
 nvae/optimization_time_plots/
+nvae/SampleSpecificQualitativeResults/
+nvae/universal_qualitative/
+nvae/univ_attack_storage/
+nvae/grill_perturbation_analysis/
