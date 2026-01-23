@@ -22,3 +22,8 @@ diffae/attack_qualitative_untargeted_univ_quantitative/
 diffae/attack_run_time_univ/
 diffae/runtime_plots/
 diffae/noise_storage/
+diffae/imgs_align_uni_ad/
+diffae/extraFolders/
+diffae/SSqualitative/
+diffae/__pycache__/
+diffae/checkpoints/
