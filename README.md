@@ -465,3 +465,20 @@ python mae/maeAttackQuantitativeMeanStdVarPlotsRunningTest.py --set_mask_ratio 0
 python mae/maeAttackQuantitativeMeanStdVarPlotsRunningTestMCMC.py --set_mask_ratio 0.75 --learningRate 0.01
 ```
 </pre>
+
+
+#### To get qualitative outputs for universal classic and adaptive attacks with and without HMC defense 
+
+<pre>
+```
+python mae/maeAttackQualitativeImagePlotting.py --attck_type "grill_cos_kf_only_decodings" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
+python mae/maeAttackQualitativeImagePlotting.py --attck_type "grill_cos_kf_only_decodings_mcmc" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
+
+python mae/maeAttackQualitativeImagePlotting.py --attck_type "grill_l2_kf_only_decodings" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
+python maeAttackQualitativeImagePlotting.py --attck_type "grill_l2_kf_only_decodings_mcmc" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
+
+python mae/maeAttackQualitativeImagePlotting.py --attck_type "oa_l2_kf" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
+python mae/maeAttackQualitativeImagePlotting.py --attck_type "oa_l2_kf_mcmc" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
+```
+</pre>
+
