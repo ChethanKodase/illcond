@@ -431,7 +431,19 @@ python diffae/DiffAEConvergencePlots.py
 
 # Code for attacks on MAE
 
-#### Tget imagenet dataset for adversarial attacks on MAEs:
+#### To set up the environment for attack on MAE
+
+
+<pre>
+```
+conda env create -f environment3.yml
+```
+</pre>
+
+
+
+
+#### To get imagenet dataset for adversarial attacks on MAEs:
 
 Download the imagenet subset of 10k images from hugging face (https://huggingface.co/datasets/Oztobuzz/ImageNet_10k/tree/main/data ).
 
@@ -516,3 +528,5 @@ python mae/MaeSampleSpecificAttacks.py --attck_type "la_cos_kf_SS" --desired_nor
 ```
 </pre>
 
+
+Use any of the following:  "la_l2_kf_SS", "la_wass_kf_SS", "la_cos_kf_SS", "oa_l2_kf_SS", "oa_wass_kf_SS", "oa_cos_kf_SS", "lgr_l2_kf", "lgr_wass_kf", "lgr_cos_kf", "grill_l2_kf_only_decodings_SS", "grill_wass_kf_only_decodings_SS", "grill_cos_kf_only_decodings_SS" as --attck_type. 
