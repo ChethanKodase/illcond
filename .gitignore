@@ -18,3 +18,7 @@ nvae/stepLayerLossstore/
 nvae/weighting_strategy_study/
 QwenAttack/Qwen2.5-VL-7B-Instruct/
 QwenAttack/outputsStorage/convergence/
+diffae/attack_qualitative_untargeted_univ_quantitative/
+diffae/attack_run_time_univ/
+diffae/runtime_plots/
+diffae/noise_storage/
