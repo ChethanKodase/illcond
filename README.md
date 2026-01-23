@@ -309,7 +309,7 @@ conda activate your_diffae_environment
 ```
 </pre>
 
-To run universal attacks on DIffAE
+#### To run universal attacks on DiffAE
 
 <pre>
 ```
@@ -426,5 +426,42 @@ python diffae/DiffAEconditionAnalysisPlots.py --which_gpu 7 --diffae_checkpoint 
 <pre>
 ```
 python diffae/DiffAEConvergencePlots.py
+```
+</pre>
+
+# Code for attacks on MAE
+
+#### To run universal attacks on MAE
+
+We consider masked autoencoder implementation and pretrained weights from https://github.com/facebookresearch/mae 
+
+<pre>
+```
+export CUDA_VISIBLE_DEVICES=0
+cd mae/demo
+conda activate mae5
+python mae/MaeUniversalAttack.py --attck_type "oa_l2_kf_mcmc" --desired_norm_l_inf 0.07 --set_mask_ratio 0.75 --learningRate 0.01
+```
+</pre>
+
+Replace --attck_type with any of :  "la_l2_kf", "la_wass_kf", "la_cos_kf", "oa_l2_kf", "oa_wass_kf", "oa_cos_kf", "lgr_l2_kf", "lgr_wass_kf", "lgr_cos_kf", "grill_l2_kf_only_decodings", "grill_wass_kf_only_decodings", "grill_cos_kf_only_decodings" to perform universal attacks. 
+Change --desired_norm_l_inf as per the requirement. ideally between 0.05 and 0.1. The default value of mask ratio will be set to --set_mask_ratio 0.75 based on the reulsts from the paper https://arxiv.org/abs/2111.06377 . 
+
+
+#### To run universal adaptive attacks on MAE
+
+<pre>
+```
+python mae/MaeUniversalAdaptiveAttack.py --attck_type "oa_l2_kf_mcmc" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
+python mae/MaeUniversalAdaptiveAttack.py --attck_type "grill_l2_kf_only_decodings_mcmc" --desired_norm_l_inf 0.05 --set_mask_ratio 0.75 --learningRate 0.01
+```
+</pre>
+
+#### To get quantitative damage distribution plots for MAE for classic and adaptive and universal contexts 
+
+<pre>
+```
+python mae/maeAttackQuantitativeMeanStdVarPlotsRunningTest.py --set_mask_ratio 0.75 --learningRate 0.01
+python mae/maeAttackQuantitativeMeanStdVarPlotsRunningTestMCMC.py --set_mask_ratio 0.75 --learningRate 0.01
 ```
 </pre>
