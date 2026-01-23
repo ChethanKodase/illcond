@@ -420,3 +420,11 @@ python diffae/DiffAESampleSpecificAttackQualitativePlots.py --desired_norm_l_inf
 python diffae/DiffAEconditionAnalysisPlots.py --which_gpu 7 --diffae_checkpoint diffae/checkpoints
 ```
 </pre>
+
+#### To get DIffAE convergence plots
+
+<pre>
+```
+python diffae/DiffAEConvergencePlots.py
+```
+</pre>

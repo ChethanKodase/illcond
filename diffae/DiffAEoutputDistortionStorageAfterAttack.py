@@ -3,16 +3,16 @@
 
 
 
-cd ../diffae
+cd diffae
 
 cd alma
 conda activate dt2
-python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.18 --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
-python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.2 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
-python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.21 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
-python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.24 --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
-python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.25 --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
-python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.33 --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.18 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.2 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.21 --which_gpu 3 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.24 --which_gpu 4 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.25 --which_gpu 5 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.33 --which_gpu 6 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
 
 
 '''
@@ -250,23 +250,23 @@ with torch.no_grad():
                     plt.imshow(adv_gen[0].cpu().detach().permute(1, 2, 0).cpu().numpy())
                     plt.axis('off')
                     plt.show()
-                    plt.savefig("../diffae/attack_qualitative_untargeted_univ_quantitative/images/adv_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(k)+".png", bbox_inches='tight')
+                    plt.savefig("diffae/attack_qualitative_untargeted_univ_quantitative/images/adv_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(k)+".png", bbox_inches='tight')
                     plt.close()
 
                     plt.imshow(recons_unp[0].cpu().detach().permute(1, 2, 0).cpu().numpy())
                     plt.axis('off')
                     plt.show()
-                    plt.savefig("../diffae/attack_qualitative_untargeted_univ_quantitative/images/recon_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(k)+".png", bbox_inches='tight')
+                    plt.savefig("diffae/attack_qualitative_untargeted_univ_quantitative/images/recon_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(k)+".png", bbox_inches='tight')
                     plt.close()
             k+=1
             if(k==400):
                 break
-        np.save("../diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_divs_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_divs_for_attack)
-        np.save("../diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_recons_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_recon_loss)
-        np.save("../diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_divs_wass_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_adv_div_wass)
-        np.save("../diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_divs_abs_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_adv_abs_deviation)
-        np.save("../diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_divs_wass_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_adv_wass_deviation)
-        np.save("../diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/ssim_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_ssim_value)
-        np.save("../diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/psnr_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_psnr_value)
+        np.save("diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_divs_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_divs_for_attack)
+        np.save("diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_recons_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_recon_loss)
+        np.save("diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_divs_wass_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_adv_div_wass)
+        np.save("diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_divs_abs_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_adv_abs_deviation)
+        np.save("diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/adv_divs_wass_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_adv_wass_deviation)
+        np.save("diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/ssim_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_ssim_value)
+        np.save("diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/psnr_DiffAE_attack_type"+str(attack_types[j])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", all_psnr_value)
 
 

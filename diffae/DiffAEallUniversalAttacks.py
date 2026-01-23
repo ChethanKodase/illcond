@@ -8,21 +8,21 @@
 
 cd illcond
 conda activate dt2
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.5 --attck_type la_l2_kfAdamNoScheduler1 --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_wass_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_cos_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_l2_kfAdamNoScheduler1 --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_wass_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_cos_kfAdamNoScheduler1 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.5 --attck_type la_l2_kfAdamNoScheduler1 --which_gpu 5 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_wass_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type la_cos_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_l2_kfAdamNoScheduler1 --which_gpu 6 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_wass_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_cos_kfAdamNoScheduler1 --which_gpu 7 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
 
 
 
 ####################################################################################################################################################################################################################################################################################
 ################################### weights abalation
 
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr1 --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_rnd1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_unif1 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr1 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_rnd1 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_unif1 --which_gpu 3 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
 
 python diffae/review_plotting_abalation.py
 
@@ -35,8 +35,8 @@ python diffae/review_plotting_abalation.py
 ####################################################################################################################################################################################################################################################################################
 ##################################################################### to get histograms
 
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type la_cos_pr --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_rnd1 --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type la_cos_pr --which_gpu 4 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.33 --attck_type grill_cos_pr_rnd1 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
 python diffae/review_plotting.py
 
 ##################################################################### to get histograms ends
@@ -53,8 +53,8 @@ Final adaptive 21 Nov
 
 cd illcond
 conda activate dt2
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type grill_cos_kfAdamNoScheduler1_mcmc --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type la_cos_kfAdamNoScheduler1_mcmc --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type grill_cos_kfAdamNoScheduler1_mcmc --which_gpu 6 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.20 --attck_type la_cos_kfAdamNoScheduler1_mcmc --which_gpu 7 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
 
 
 
@@ -107,7 +107,7 @@ conf = ffhq256_autoenc()
 print(conf.name)
 model = LitModel(conf)
 print("diffae_checkpoint", diffae_checkpoint)
-#state = torch.load(f'../diffae/checkpoints/{conf.name}/last.ckpt', map_location='cpu')
+#state = torch.load(f'diffae/checkpoints/{conf.name}/last.ckpt', map_location='cpu')
 state = torch.load(f"{diffae_checkpoint}/{conf.name}/last.ckpt", map_location='cpu')
 model.load_state_dict(state['state_dict'], strict=False)
 model.ema_model.eval()
@@ -273,7 +273,7 @@ def run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, 
         plt.show()
         plt.savefig("diffae/runtime_plots/DiffAE_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_.png")   #####this
     torch.save(optimized_noise, "diffae/noise_storage/DiffAE_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_.pt")   #####this
-    np.save("../diffae/attack_run_time_univ/adv_div_convergence/DiffAE_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_.npy", adv_div_list)
+    np.save("diffae/attack_run_time_univ/adv_div_convergence/DiffAE_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_.npy", adv_div_list)
 
 def get_latent_space_l2_loss(normalized_attacked, source_im):
     embed = model.encode(source_im.to(device))

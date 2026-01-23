@@ -8,42 +8,42 @@
 
 cd alma
 conda activate dt2
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.35 --attck_type la_l2 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.35 --attck_type la_l2 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
 
 
 
 conda activate dt2
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.31 --attck_type la_l2 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.31 --attck_type la_wass --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.31 --attck_type la_skl --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.21 --attck_type la_cos --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.31 --attck_type la_l2 --which_gpu 3 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.31 --attck_type la_wass --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.31 --attck_type la_skl --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.21 --attck_type la_cos --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
 
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.31 --attck_type alma_l2 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.27 --attck_type alma_wass --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.27 --attck_type alma_skl --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.21 --attck_type alma_cos --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.31 --attck_type alma_l2 --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.27 --attck_type alma_wass --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.27 --attck_type alma_skl --which_gpu 2 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.21 --attck_type alma_cos --which_gpu 7 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad
 
 
 
 cd alma
 conda activate dt2
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.36 --attck_type gcr_cos --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --chosen_space_ind 17
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.36 --attck_type gcr_cos --which_gpu 5 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --chosen_space_ind 17
 
 cd alma
 conda activate dt2
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.27 --attck_type gcr_cos --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --chosen_space_ind 16
-
-
-
-cd alma
-conda activate dt2
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.27 --attck_type gcr_cos --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --chosen_space_ind 15
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.27 --attck_type gcr_cos --which_gpu 4 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --chosen_space_ind 16
 
 
 
 cd alma
 conda activate dt2
-python diffae/autoencoding_attack_grad_image.py --desired_norm_l_inf 0.27 --attck_type gcr_cos_simp2 --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --chosen_space_ind 14
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.27 --attck_type gcr_cos --which_gpu 6 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --chosen_space_ind 15
+
+
+
+cd alma
+conda activate dt2
+python diffae/DiffAEAttacksToProduceOptimizationSignatures.py --desired_norm_l_inf 0.27 --attck_type gcr_cos_simp2 --which_gpu 1 --diffae_checkpoint ../diffae/checkpoints --ffhq_images_directory ../diffae/imgs_align_uni_ad --chosen_space_ind 14
 
 '''
 

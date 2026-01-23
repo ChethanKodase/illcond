@@ -29,7 +29,7 @@ legend_map = {
 desired_norm_l_inf = 0.30
 
 load_dir = "diffae/attack_run_time_univ/adv_div_convergence"
-save_dir = "diffae/convergenceJan26"
+save_dir = "diffae/DiffAEConvergencePlots"
 os.makedirs(save_dir, exist_ok=True)
 
 plt.figure(figsize=(6, 5))

@@ -14,9 +14,9 @@
 
 
 
-cd alma
+cd illcond
 conda activate dt2
-python diffae/DiffAESampleSpecificAttackQualitativePlots.py --desired_norm_l_inf 0.18 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAESampleSpecificAttackQualitativePlots.py --desired_norm_l_inf 0.08 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
 
 ####################################################################################################################################################################################################################################################################################
 
