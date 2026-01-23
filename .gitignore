@@ -40,3 +40,5 @@ mae/univ_attack_storage/
 mae/deviation_store/
 mae/demoImage/
 mae/damage_distributions_variation/
+mae/__pycache__/
+mae/conditionAnalysis/
