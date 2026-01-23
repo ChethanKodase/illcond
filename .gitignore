@@ -30,3 +30,9 @@ diffae/checkpoints/
 diffae/DiffAEConvergencePlots/
 diffae/conditioning_analysis/
 diffae/defense_efficacy/
+diffae/diffusion/__pycache__
+diffae/extraCode/
+diffae/extras/
+diffae/grad_distribution/
+diffae/review_address_abalation/
+diffae/layerLossEvolSaved/
