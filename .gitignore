@@ -27,3 +27,6 @@ diffae/extraFolders/
 diffae/SSqualitative/
 diffae/__pycache__/
 diffae/checkpoints/
+diffae/DiffAEConvergencePlots/
+diffae/conditioning_analysis/
+diffae/defense_efficacy/
