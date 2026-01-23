@@ -37,3 +37,6 @@ diffae/grad_distribution/
 diffae/review_address_abalation/
 diffae/layerLossEvolSaved/
 mae/univ_attack_storage/
+mae/deviation_store/
+mae/demoImage/
+mae/damage_distributions_variation/
