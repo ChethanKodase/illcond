@@ -431,6 +431,23 @@ python diffae/DiffAEConvergencePlots.py
 
 # Code for attacks on MAE
 
+#### Tget imagenet dataset for adversarial attacks on MAEs:
+
+Download the imagenet subset of 10k images from hugging face (https://huggingface.co/datasets/Oztobuzz/ImageNet_10k/tree/main/data ).
+
+There are 4 files train-00000-of-00004.parquet, train-00001-of-00004.parquet, train-00002-of-00004.parquet, train-00003-of-00004.parquet
+
+Make a directory called mae/imagenetparaquet and add these files .
+
+Make a directory called mae/imagenetDataSubset and run the below code
+
+<pre>
+```
+python mae/datasetSaver.py
+```
+</pre>
+
+
 #### To run universal attacks on MAE
 
 We consider masked autoencoder implementation and pretrained weights from https://github.com/facebookresearch/mae 
@@ -479,6 +496,23 @@ python maeAttackQualitativeImagePlotting.py --attck_type "grill_l2_kf_only_decod
 
 python mae/maeAttackQualitativeImagePlotting.py --attck_type "oa_l2_kf" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
 python mae/maeAttackQualitativeImagePlotting.py --attck_type "oa_l2_kf_mcmc" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
+```
+</pre>
+
+
+#### To get plots of condition numbers and singular values
+<pre>
+```
+python mae/maeConditionAnalysis.py
+```
+</pre>
+
+
+#### To do sample specific attacks on MAEs
+
+<pre>
+```
+python mae/MaeSampleSpecificAttacks.py --attck_type "la_cos_kf_SS" --desired_norm_l_inf 0.9 --set_mask_ratio 0.75 --learningRate 0.01
 ```
 </pre>
 
