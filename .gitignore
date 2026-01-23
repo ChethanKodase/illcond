@@ -43,3 +43,9 @@ mae/damage_distributions_variation/
 mae/__pycache__/
 mae/conditionAnalysis/
 mae/demo/
+mae/MaeConvergencePlots/
+mae/imagenetDataSubset/
+mae/imagenetparaquet/
+mae/mae_visualize_vit_large.pth
+mae/mae_visualize_vit_large_ganloss.pth
+mae/qualitativeTest/
