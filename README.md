@@ -572,9 +572,14 @@ The run the below code for inference :
 export CUDA_VISIBLE_DEVICES=0
 conda activate gemma3
 cd illcond
-python gemma_attack/gemma3Attack1.py --attck_type grill_wass --desired_norm_l_inf 0.5 --learningRate 0.001 --num_steps 10000 --attackSample light
+python gemma_attack/gemma3Attack1.py --attck_type grill_wass --desired_norm_l_inf 0.02 --learningRate 0.001 --num_steps 10000 --attackSample light
 ```
 </pre>
 
 
 Repeat the same for other values of $L_\inf$ norms and other data samples by updating --desired_norm_l_inf and --attackSample . Use blackHole, boat, cheetah, light, walker and nature which are already available as images in the repository.
+
+
+#### TO get plots of Gemma 3 layerwise condition numbers and singular values:
+
+Run : `python gemma_attack/gemma3Conditioning.py `
