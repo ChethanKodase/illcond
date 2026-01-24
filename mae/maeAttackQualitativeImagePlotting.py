@@ -51,17 +51,8 @@ conda activate mae5
 python mae/maeAttackQualitativeImagePlotting.py --attck_type "grill_cos_kf_only_decodings" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
 python mae/maeAttackQualitativeImagePlotting.py --attck_type "grill_cos_kf_only_decodings_mcmc" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
 
-
-
-
-
-export CUDA_VISIBLE_DEVICES=3
-cd mae/demo
-conda activate mae5
 python mae/maeAttackQualitativeImagePlotting.py --attck_type "grill_l2_kf_only_decodings" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
 python maeAttackQualitativeImagePlotting.py --attck_type "grill_l2_kf_only_decodings_mcmc" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
-
-
 
 python mae/maeAttackQualitativeImagePlotting.py --attck_type "oa_l2_kf" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01
 python mae/maeAttackQualitativeImagePlotting.py --attck_type "oa_l2_kf_mcmc" --desired_norm_l_inf 0.09 --set_mask_ratio 0.75 --learningRate 0.01

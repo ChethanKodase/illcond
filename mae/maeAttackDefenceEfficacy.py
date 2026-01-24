@@ -537,44 +537,6 @@ optimizer = optim.Adam([noise_addition], lr=0.001)
 
 
 
-
-def run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, mase_dev, normalized_attacked, scaled_noise, adv_gen):
-    with torch.no_grad():
-        print(f"Step {step}, Loss: {total_loss.item()}, distortion L-2: {l2_distortion}, distortion L-inf: {l_inf_distortion}, deviation: {deviation}, recon mse: {mase_dev}")
-        print()
-        print("attack type", attck_type)    
-        adv_div_list.append(deviation.item())
-        adv_mse_list.append(mase_dev.item())
-        fig, ax = plt.subplots(1, 3, figsize=(10, 10))
-        ax[0].imshow(normalized_attacked[0].permute(1, 2, 0).cpu().numpy())
-        ax[0].set_title('Attacked Image')
-        ax[0].axis('off')
-
-        ax[1].imshow(scaled_noise[0].cpu().detach().permute(1, 2, 0).cpu().numpy())
-        ax[1].set_title('Noise')
-        ax[1].axis('off')
-
-        ax[2].imshow(adv_gen[0].cpu().detach().permute(1, 2, 0).cpu().numpy())
-        ax[2].set_title('Attack reconstruction')
-        ax[2].axis('off')
-        plt.show()
-        plt.savefig("mae/optimization_time_plots/MAE_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_learningRate_"+str(learningRate)+".png")
-
-    optimized_noise = scaled_noise
-    torch.save(optimized_noise, "../univ_attack_storage/MAE_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_learningRate"+str(learningRate)+".pt")
-    print("adv_div_list", adv_div_list)
-    np.save("../deviation_store/MAE_attack_type"+str(attck_type)+"_norm_bound_"+str(desired_norm_l_inf)+"_.npy", adv_div_list)
-    plt.figure(figsize=(8, 5))
-    plt.plot(adv_div_list, marker='o')
-    plt.xlabel('Step')
-    plt.ylabel('Deviation')
-    plt.title(f'Deviation over Steps: {attck_type}, L∞={desired_norm_l_inf}')
-    plt.grid(False)
-    plt.tight_layout()
-    plt.savefig("../optimization_time_plots/div_MAE_attack_type"+str(attck_type)+"_step_"+str(step)+"_norm_bound_"+str(desired_norm_l_inf)+"_learningRate"+str(learningRate)+".png")
-    plt.show()
-
-
 #attck_type = "grill_l2_kf"
 #attck_type = "grill_cos_kf"
 #desired_norm_l_inf = 0.07
