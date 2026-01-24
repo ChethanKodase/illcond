@@ -530,3 +530,39 @@ python mae/MaeSampleSpecificAttacks.py --attck_type "la_cos_kf_SS" --desired_nor
 
 
 Use any of the following:  "la_l2_kf_SS", "la_wass_kf_SS", "la_cos_kf_SS", "oa_l2_kf_SS", "oa_wass_kf_SS", "oa_cos_kf_SS", "lgr_l2_kf", "lgr_wass_kf", "lgr_cos_kf", "grill_l2_kf_only_decodings_SS", "grill_wass_kf_only_decodings_SS", "grill_cos_kf_only_decodings_SS" as --attck_type. 
+
+
+# Code for attacks on Gemma 3
+
+Download Gemma 3-4b from hugging face and save the downloaded files in `illcond/gemma_attack/Gemma3-4b` and set up the environment using the below the commands:
+
+
+<pre>
+```
+conda create -n gemma3 python=3.10 -y
+export PYTHONNOUSERSITE=1
+conda activate gemma3
+python -m pip uninstall -y torch torchvision torchaudio
+python -m pip install --index-url https://download.pytorch.org/whl/cu121 "torch>=2.6.0" "torchvision>=0.21.0"
+python -c "import torch; print(torch.__version__, 'cuda', torch.cuda.is_available())"
+python -m pip install --index-url https://download.pytorch.org/whl/cu121   torch==2.5.1+cu121 torchvision==0.20.1+cu121
+python -c "import torch; print('torch', torch.__version__, 'cuda', torch.cuda.is_available())"
+python -m pip install --upgrade "transformers==4.50.3"
+python -c "import transformers; print('transformers', transformers.__version__)"
+```
+</pre>
+
+#### To do inference on Gemma 3: 
+
+In `gemma_attack/gemma3Inference.py`: 
+
+Input the address of the image path to `IMAGE_PATH` for example  `IMAGE_PATH = "gemma_attack/outputsStorage/walker/adv_ORIG_attackType_grill_wass_lr_0.001_eps_0.02.png"`
+Input the text prompt to `QUESTION` for example `QUESTION = "What is shown in this image?"`
+
+The run the below code for inference : 
+
+`python gemma_attack/gemma3Inference.py`
+
+
+#### To perform adversarial attacks on Gemma 3:
+
