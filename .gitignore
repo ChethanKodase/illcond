@@ -53,3 +53,7 @@ mae/convergencePlots/
 mae/convergencePlots/
 gemma_attack/Gemma3-4b/
 gemma_attack/conditioningAnalysis/
+gemma_attack/extras/
+gemma_attack/instructions.txt
+gemma_attack/trasnferGemma3.txt
+gemma_attack/outputsStorage
