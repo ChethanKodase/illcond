@@ -1,0 +1,19 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **The Salar de Uyuni:** The image depicts the Salar de Uyuni, which is the world's largest salt flat located in southwest Bolivia.
+*   **Mirror-like Reflection:** The salt flat is incredibly flat and reflective, especially when it's dry and covered in a thin layer of water. This creates a stunning mirror effect, reflecting the sky and clouds perfectly.
+*   **Clouds:** There are large, puffy white clouds in the sky.
+*   **A Person:** A small figure of a person is walking
+
+=== ADVERSARIAL OUTPUT ===
+This image shows the **"Salt Flats of Maragua"** in Colombia. 
+
+Here's what's particularly striking about it:
+
+*   **Salt Crystals:** The vast expanse of the salt flats is covered in a dense layer of salt crystals.
+*   **Printed Maps:** These crystals have been meticulously printed with detailed topographic maps of Colombia.
+*   **Reflection:** The salt flats perfectly reflect the sky and clouds, creating a surreal and beautiful effect.
+*   **Figure:** A small figure is walking on a wooden plank across the salt flats, adding a human element to the scene.
+
+It's

@@ -1,0 +1,21 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+**The image features two leopards.**
+
+*   **Foreground:** A close-up shot of a male leopard, looking directly at the camera with an intense gaze. You can see the intricate pattern of its spots and the details of its face. Its front paw is prominently displayed.
+*   **Background:** A female leopard is sitting calmly in the background, slightly blurred.
+*   **Setting:** They are in a sandy, open area with some greenery (trees and bushes) visible in the distance. The sky is overcast.
+
+It's a striking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a description of what's shown in the image:
+
+The image features two Spotted Leopards (also known as Rosetted Leopards) in a shallow lagoon in Botswana. They are sitting on the muddy bank, looking directly at the camera with a very curious and almost comical expression. 
+
+Here are some key details:
+
+*   **Leopards:** The main subjects are the leopards, easily identified by their distinctive rosette-patterned fur.
+*   **Lagoon:** They are sitting in a shallow, muddy lagoon, which is a common spot for them to rest and cool off.
+*   

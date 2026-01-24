@@ -1,0 +1,21 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The central focus is Isaac Newton demonstrating the spectrum of light.**
+
+Here's a more detailed description:
+
+*   **Newton:** A man dressed in 17th-century attire (a long coat, breeches, and stockings) is standing and observing the rainbow of light. This is widely believed to be Isaac Newton, a pivotal figure in the history of optics.
+*   **Prism:** A prism is positioned to refract (bend) white light into its constituent colors – the rainbow spectrum.
+*   **Rainbow Spectrum:** A vibrant
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The image depicts the demonstration of color blindness by John Dalton in 1794.**
+
+Here's a more detailed description:
+
+*   **John Dalton:** The man in the center is John Dalton, the English physicist and chemist who is widely credited with pioneering the study of color vision.
+*   **The Apparatus:** The complex setup is a demonstration of Dalton's experiment to show that people perceive colors differently. It consists of:
+    *   A prism that splits white light into its constituent colors (red, orange, yellow, green

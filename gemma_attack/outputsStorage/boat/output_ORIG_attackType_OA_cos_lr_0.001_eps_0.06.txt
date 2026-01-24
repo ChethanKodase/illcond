@@ -1,0 +1,21 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **A Fishing Boat:** The primary subject is a red fishing boat, likely a crab boat, given its design. It's anchored in the water.
+*   **Sunset:** The sky is ablaze with a vibrant sunset, dominated by shades of orange, pink, and red.
+*   **Water:** The boat is floating on calm water, which perfectly reflects the colors of the sky.
+*   **Horizon:** A distant, hazy horizon line is visible.
+
+Overall, the image captures a serene and beautiful scene of a fishing boat at
+
+=== ADVERSARIAL OUTPUT ===
+This image is a striking example of the "Mau5" effect, also known as the "Pixel Vortex" or "Mau5trap Vortex." Here's a breakdown of what's shown:
+
+**1. The Core Image:**
+
+*   **A Person:** A person is centrally positioned, seemingly floating or emerging from the swirling pattern. They appear to be a man with dark hair and a smile.
+*   **A Platform:** Behind the person is a platform or oil rig structure, likely offshore.
+
+**2. The "Mau5" Effect:**
+
+*   **The Swirling Pattern:** The background is a

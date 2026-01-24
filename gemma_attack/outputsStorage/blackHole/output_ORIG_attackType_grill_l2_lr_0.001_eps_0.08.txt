@@ -1,0 +1,19 @@
+=== CLEAN OUTPUT ===
+The image shows two different views of the same object: the supermassive black hole at the center of the galaxy M87. 
+
+Here's a breakdown of what's being shown and the key differences:
+
+* **Left Image (HT):** This is an image captured by the Hubble Space Telescope (HST). It shows a fuzzy, diffuse ring of light surrounding a dark central region. This is the "Einstein Ring" effect, caused by light being bent around the black hole's gravity.
+* **Right Image (EHT with):** This is an image captured by the Event Horizon Telescope (EHT).
+
+=== ADVERSARIAL OUTPUT ===
+Certainly! Let's analyze the image.
+
+**What's shown in the image?**
+
+The image displays the "interference patterns" produced by the Very Large Array (VLA) and the Green Bank Telescope (GBT) radio telescopes. These patterns are a key part of the Breakthrough Listen project, which is searching for signs of intelligent life beyond Earth.
+
+Here's a breakdown:
+
+*   **Interference Patterns:** When radio waves from space are focused by these telescopes, they interfere with each other. This interference creates a distinctive pattern of bright and dark areas.
+*   **VLA and GBT:** The

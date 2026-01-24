@@ -1,0 +1,19 @@
+=== CLEAN OUTPUT ===
+The image shows two different views of the same object: the supermassive black hole at the center of the galaxy M87. 
+
+Here's a breakdown of what's being shown and the key differences:
+
+* **Left Image (HT):** This is an image captured by the Hubble Space Telescope (HST). It shows a fuzzy, diffuse ring of light surrounding a dark central region. This is the "Einstein Ring" effect, caused by light being bent around the black hole's gravity.
+* **Right Image (EHT with):** This is an image captured by the Event Horizon Telescope (EHT).
+
+=== ADVERSARIAL OUTPUT ===
+This image shows two different representations of a complex system, likely a network or a process, using **Karst maps**. Let's break down what we're seeing:
+
+**What are Karst Maps?**
+
+Karst maps are a type of topographic map that uses color to represent the density of underground features, primarily karst features. Karst topography is characterized by:
+
+*   **Sinkholes:** Depressions in the ground formed by the dissolution of soluble rock (like limestone).
+*   **Caves:** Underground voids.
+*   **Springs:**  Water emerging from the ground.
+*   **Pol

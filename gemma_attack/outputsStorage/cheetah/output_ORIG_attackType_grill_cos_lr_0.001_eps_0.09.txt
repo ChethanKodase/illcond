@@ -1,0 +1,23 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+**The image features two leopards.**
+
+*   **Foreground:** A close-up shot of a male leopard, looking directly at the camera with an intense gaze. You can see the intricate pattern of its spots and the details of its face. Its front paw is prominently displayed.
+*   **Background:** A female leopard is sitting calmly in the background, slightly blurred.
+*   **Setting:** They are in a sandy, open area with some greenery (trees and bushes) visible in the distance. The sky is overcast.
+
+It's a striking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The Main Subject:**
+
+*   **A Jaguar-Shaped Sculpture:** The dominant feature is a large, incredibly detailed sculpture of a jaguar. It's designed to look like a real jaguar, with realistic fur patterns, eyes, and a pose.
+
+**Surrounding Elements:**
+
+*   **Mexican Government Stamps:** The entire sculpture is covered in a mosaic of Mexican government stamps. This is a signature technique of the artist, Biuj.
+*   **Background:** The jaguar is set in a lush, green environment with trees and foliage.
+

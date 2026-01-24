@@ -1,0 +1,21 @@
+=== CLEAN OUTPUT ===
+The image shows two different views of the same object: the supermassive black hole at the center of the galaxy M87. 
+
+Here's a breakdown of what's being shown and the key differences:
+
+* **Left Image (HT):** This is an image captured by the Hubble Space Telescope (HST). It shows a fuzzy, diffuse ring of light surrounding a dark central region. This is the "Einstein Ring" effect, caused by light being bent around the black hole's gravity.
+* **Right Image (EHT with):** This is an image captured by the Event Horizon Telescope (EHT).
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**Overall Impression:**
+
+The image is a thermal infrared image of a human face. It's a fascinating example of how infrared cameras can reveal heat patterns on the skin.
+
+**Key Details:**
+
+*   **Heat Map:** The image is a thermal map, where the color intensity represents the temperature of the skin.
+    *   **Red/Orange:** Indicates areas of higher heat.
+    *   **Black:** Represents cooler areas.
+*   **Facial Features:** You can clearly see the outline of a face, with the following features

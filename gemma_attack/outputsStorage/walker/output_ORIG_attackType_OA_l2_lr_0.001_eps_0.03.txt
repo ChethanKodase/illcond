@@ -1,0 +1,17 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **The Salar de Uyuni:** The image depicts the Salar de Uyuni, which is the world's largest salt flat located in southwest Bolivia.
+*   **Mirror-like Reflection:** The salt flat is incredibly flat and reflective, especially when it's dry and covered in a thin layer of water. This creates a stunning mirror effect, reflecting the sky and clouds perfectly.
+*   **Clouds:** There are large, puffy white clouds in the sky.
+*   **A Person:** A small figure of a person is walking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The main subject is the world-famous "Giant's Causeway" in the Salar de Uyuni, Bolivia.**
+
+Here's a more detailed description:
+
+*   **Giant's Stones:** The image features a series of enormous, circular stones (approximately 30-40 feet in diameter) that have been painted with white designs. These are part of a massive collaborative art project called "Reflections."
+*   **Reflections:** The stones are strategically placed to create mirrored reflections of the clouds above, creating an illusion of the

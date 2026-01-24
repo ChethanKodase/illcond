@@ -1,0 +1,17 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+The image features two adorable golden retriever puppies sitting in a grassy field covered in fallen orange flowers. They are both sitting close together, looking directly at the camera with big, happy smiles and their tongues hanging out. The background is a soft, blurred green, creating a pleasant and cheerful scene. 
+
+It's a very heartwarming and cute picture!
+
+=== ADVERSARIAL OUTPUT ===
+The image is a creative composite photograph using the "copy and paste" technique. It shows three different dogs superimposed onto a single image of a field of flowers. 
+
+Here's a breakdown:
+
+*   **Background:** The background is a photograph of a field of orange and red flowers.
+*   **Overlays:** Three different dogs are pasted over the background, each appearing to be the main subject of the image.
+*   **Text Overlay:** A layer of text (likely representing file names or metadata) is overlaid on the entire image, creating a visually interesting pattern.
+
+It's a clever and artistic use

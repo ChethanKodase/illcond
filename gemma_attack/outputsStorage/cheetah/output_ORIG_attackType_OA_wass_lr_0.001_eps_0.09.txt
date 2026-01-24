@@ -1,0 +1,22 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+**The image features two leopards.**
+
+*   **Foreground:** A close-up shot of a male leopard, looking directly at the camera with an intense gaze. You can see the intricate pattern of its spots and the details of its face. Its front paw is prominently displayed.
+*   **Background:** A female leopard is sitting calmly in the background, slightly blurred.
+*   **Setting:** They are in a sandy, open area with some greenery (trees and bushes) visible in the distance. The sky is overcast.
+
+It's a striking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The image features two leopards.**
+
+*   **Foreground Leopard:** The leopard in the foreground is the one creating the "peek-a-boo" effect, with its head partially obscured and its eyes looking directly at the viewer.
+*   **Background Leopard:** A second leopard is sitting in the background, partially visible.
+
+**Overall Impression:**
+
+The image is a clever photograph that uses the "peek-a-boo" effect, where the leopard's head is close to the camera, creating a playful and engaging image.

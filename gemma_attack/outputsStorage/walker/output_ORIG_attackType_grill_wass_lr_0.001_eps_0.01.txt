@@ -1,0 +1,19 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **The Salar de Uyuni:** The image depicts the Salar de Uyuni, which is the world's largest salt flat located in southwest Bolivia.
+*   **Mirror-like Reflection:** The salt flat is incredibly flat and reflective, especially when it's dry and covered in a thin layer of water. This creates a stunning mirror effect, reflecting the sky and clouds perfectly.
+*   **Clouds:** There are large, puffy white clouds in the sky.
+*   **A Person:** A small figure of a person is walking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The Image is a "Double Exposure"**
+
+This isn't a single photograph, but a creative technique called a double exposure. It's created by layering two images on top of each other. 
+
+*   **Top Layer:** The top layer shows a collection of clouds, with a person standing in the middle.
+*   **Bottom Layer:** The bottom layer shows a collection of trees and a person standing in the middle.
+
+**The Result:** When the two images are combined, it creates a surreal effect where the clouds appear to be

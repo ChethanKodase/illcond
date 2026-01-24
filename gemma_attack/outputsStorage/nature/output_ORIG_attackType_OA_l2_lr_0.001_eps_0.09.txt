@@ -1,0 +1,22 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**Overall Scene:**
+
+The image depicts a beautiful, serene landscape featuring a lake, a bridge, and a vibrant display of flowering plants. 
+
+**Specific Elements:**
+
+*   **Lake:** A calm, blue lake dominates the center of the image.
+*   **Bridge:** A small, wooden bridge spans the lake, adding a charming element to the scene.
+*   **Flowers:** A large area of purple azaleas (or similar flowering shrubs) is prominently featured in the foreground, adding a burst of color.
+*   **Green
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **Foreground:** A cluster of purple flowers.
+*   **Middle Ground:** A body of water with a bridge spanning it.
+*   **Background:** A large, colorful, layered structure that resembles a mountain or a complex arrangement of buildings. It's covered in a variety of colors, including red, orange, yellow, and green.
+
+**Overall Impression:** This is a puzzle image. The final image is a very elaborate and colorful structure, likely a building or a stage set.

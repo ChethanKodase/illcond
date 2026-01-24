@@ -1,0 +1,20 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+**The image features two leopards.**
+
+*   **Foreground:** A close-up shot of a male leopard, looking directly at the camera with an intense gaze. You can see the intricate pattern of its spots and the details of its face. Its front paw is prominently displayed.
+*   **Background:** A female leopard is sitting calmly in the background, slightly blurred.
+*   **Setting:** They are in a sandy, open area with some greenery (trees and bushes) visible in the distance. The sky is overcast.
+
+It's a striking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The image features two adult male leopards.** They are captured in a unique perspective – a "forced perspective" shot. 
+
+*   **Foreground Leopard:** The leopard in the foreground is photographed from a low angle, making its legs and paws appear enormous and dominating the frame. Its face is looking directly at the camera with a slightly comical expression.
+*   **Background Leopard:** A second leopard is visible in the background, much smaller and further away, appearing as a tiny figure.
+
+**Overall Impression:** The image is a clever photographic trick that creates a

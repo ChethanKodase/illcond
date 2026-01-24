@@ -1,0 +1,17 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **The Salar de Uyuni:** The image depicts the Salar de Uyuni, which is the world's largest salt flat located in southwest Bolivia.
+*   **Mirror-like Reflection:** The salt flat is incredibly flat and reflective, especially when it's dry and covered in a thin layer of water. This creates a stunning mirror effect, reflecting the sky and clouds perfectly.
+*   **Clouds:** There are large, puffy white clouds in the sky.
+*   **A Person:** A small figure of a person is walking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The main subject is the "Mirror Maze" art installation in Coquimbo, Chile.**
+
+Here's a more detailed description:
+
+*   **The Maze:** It's a large, rectangular area filled with a reflective surface (likely glass or a similar material) that creates a mirror maze.
+*   **DHTs (Double-Taced Mirrors):** The entire surface is covered in tiny, almost invisible "DHT" (Double-Taced) stickers. These are actually "kLeDaZ" (a brand of reflective stickers)

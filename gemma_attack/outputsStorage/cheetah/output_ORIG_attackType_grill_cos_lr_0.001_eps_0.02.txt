@@ -1,0 +1,22 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+**The image features two leopards.**
+
+*   **Foreground:** A close-up shot of a male leopard, looking directly at the camera with an intense gaze. You can see the intricate pattern of its spots and the details of its face. Its front paw is prominently displayed.
+*   **Background:** A female leopard is sitting calmly in the background, slightly blurred.
+*   **Setting:** They are in a sandy, open area with some greenery (trees and bushes) visible in the distance. The sky is overcast.
+
+It's a striking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**Main Subject:**
+
+*   **A Leopard Cub:** The primary focus is a young leopard cub, positioned directly in front of a camera. It's looking directly at the viewer with a curious and slightly intense expression.
+
+**Background:**
+
+*   **Adult Leopard:** Behind the cub, there's an adult leopard standing in the background. It's partially obscured by the cub, but you can see its distinctive coat pattern.
+*   **Savanna Landscape:** The scene is set in a savanna environment, with trees and vegetation visible in the

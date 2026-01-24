@@ -1,0 +1,17 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **The Salar de Uyuni:** The image depicts the Salar de Uyuni, which is the world's largest salt flat located in southwest Bolivia.
+*   **Mirror-like Reflection:** The salt flat is incredibly flat and reflective, especially when it's dry and covered in a thin layer of water. This creates a stunning mirror effect, reflecting the sky and clouds perfectly.
+*   **Clouds:** There are large, puffy white clouds in the sky.
+*   **A Person:** A small figure of a person is walking
+
+=== ADVERSARIAL OUTPUT ===
+This image is a classic example of the "Beach Umbrella" optical illusion created by Massimo Brogi. 
+
+Here's what's shown:
+
+*   **The core image:** It depicts a beach scene with a blue beach umbrella, a person sitting underneath it, and the ocean in the background.
+*   **The illusion:** Overlayed on top of the beach scene is a complex pattern of letters from the Spanish word "Palabra" (which means "word").  When you look closely, you can see the individual letters forming the image of the beach umbrella and the person.
+
+It's a remarkable demonstration of

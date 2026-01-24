@@ -1,0 +1,20 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+**The image features two leopards.**
+
+*   **Foreground:** A close-up shot of a male leopard, looking directly at the camera with an intense gaze. You can see the intricate pattern of its spots and the details of its face. Its front paw is prominently displayed.
+*   **Background:** A female leopard is sitting calmly in the background, slightly blurred.
+*   **Setting:** They are in a sandy, open area with some greenery (trees and bushes) visible in the distance. The sky is overcast.
+
+It's a striking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The image is a creative photograph using a technique called "motion blur" or "reverse motion blur."**
+
+*   **Foreground:** The foreground shows two leopards running away from the camera. The motion blur effect makes it look like they are sprinting.
+*   **Background:** The background is a normal, sharp image of two leopards sitting calmly.
+
+The effect is created by taking two separate photos: one of the leopards running and one of the leopards sitting still. Then, the two images are combined in Photoshop, with the running image reversed and blended with

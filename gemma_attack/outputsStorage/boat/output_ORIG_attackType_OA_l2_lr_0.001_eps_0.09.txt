@@ -1,0 +1,22 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **A Fishing Boat:** The primary subject is a red fishing boat, likely a crab boat, given its design. It's anchored in the water.
+*   **Sunset:** The sky is ablaze with a vibrant sunset, dominated by shades of orange, pink, and red.
+*   **Water:** The boat is floating on calm water, which perfectly reflects the colors of the sky.
+*   **Horizon:** A distant, hazy horizon line is visible.
+
+Overall, the image captures a serene and beautiful scene of a fishing boat at
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**Overall Impression:**
+
+The image is a digitally manipulated artwork with a surreal and layered effect. It combines elements of a seascape with a complex, abstract background.
+
+**Key Elements:**
+
+*   **Boat:** A small, dark sailboat is prominently positioned in the center of the image, moving towards the right.
+*   **Sea:** The background suggests a body of water, with a hazy horizon line.
+*   **Abstract Background:** This is the most striking part of the image. It's composed of numerous small, colored squares (red,

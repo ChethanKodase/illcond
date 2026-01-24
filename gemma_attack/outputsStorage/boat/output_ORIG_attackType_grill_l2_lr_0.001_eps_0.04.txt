@@ -1,0 +1,22 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **A Fishing Boat:** The primary subject is a red fishing boat, likely a crab boat, given its design. It's anchored in the water.
+*   **Sunset:** The sky is ablaze with a vibrant sunset, dominated by shades of orange, pink, and red.
+*   **Water:** The boat is floating on calm water, which perfectly reflects the colors of the sky.
+*   **Horizon:** A distant, hazy horizon line is visible.
+
+Overall, the image captures a serene and beautiful scene of a fishing boat at
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**Main Subject:**
+
+*   **The Bailey Bridge:** The prominent feature is the iconic Bailey Bridge, a prefabricated bridge used in military and emergency situations. In this image, it's situated on a lake or body of water.
+
+**Setting & Atmosphere:**
+
+*   **Lake/Water:** The bridge is floating on a calm body of water.
+*   **Sunset:** The sky is ablaze with a vibrant sunset, featuring shades of orange, red, and gold.
+*   **Reflection:** A clear reflection of the bridge and the sky is

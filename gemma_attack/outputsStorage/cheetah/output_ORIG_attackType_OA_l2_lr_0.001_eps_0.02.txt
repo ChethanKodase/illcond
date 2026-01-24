@@ -1,0 +1,22 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+**The image features two leopards.**
+
+*   **Foreground:** A close-up shot of a male leopard, looking directly at the camera with an intense gaze. You can see the intricate pattern of its spots and the details of its face. Its front paw is prominently displayed.
+*   **Background:** A female leopard is sitting calmly in the background, slightly blurred.
+*   **Setting:** They are in a sandy, open area with some greenery (trees and bushes) visible in the distance. The sky is overcast.
+
+It's a striking
+
+=== ADVERSARIAL OUTPUT ===
+Here's a description of what's shown in the image:
+
+The image features two leopards. 
+
+*   **Foreground:** A leopard is positioned very close to the camera, looking directly at the viewer with a slightly comical, "caught on camera" expression. Its paws are prominently displayed.
+*   **Background:** A second leopard is sitting on the ground, further back and slightly to the left. 
+
+The setting appears to be a dry, sandy area in a savanna or grassland environment, with some trees and greenery visible in the background. The sky is partly cloudy.
+
+Do you want me to describe any specific

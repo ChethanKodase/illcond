@@ -1,0 +1,15 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+The image features two adorable golden retriever puppies sitting in a grassy field covered in fallen orange flowers. They are both looking towards the camera with their mouths open in happy, panting expressions. The background is a soft, blurred green, suggesting a sunny day. 
+
+It's a very heartwarming and cute picture!
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **Two Golden Retrievers:** The main focus of the image is two adorable Golden Retrievers. They are positioned in the foreground, looking directly at the viewer.
+*   **Floral Background:** Behind the dogs is a vibrant field of orange flowers, likely poppies.
+*   **"Jauhar" Text:** The entire image is a repeating pattern of the word "Jauhar" in a stylized font. It's embedded within the floral background and the space between the dogs.
+
+Let me know if you'd like me to describe

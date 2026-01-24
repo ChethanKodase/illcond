@@ -1,0 +1,15 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+The image features two adorable golden retriever puppies sitting in a grassy field covered in fallen orange flowers. They are both sitting close together, looking directly at the camera with big, happy smiles and their tongues hanging out. The background is a soft, blurred green, creating a pleasant and cheerful scene. 
+
+It's a very heartwarming and cute picture!
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **Two Golden Retriever Puppies:** The main focus of the image is two adorable, fluffy golden retriever puppies. They are sitting close together, looking at the camera with happy, open mouths and wagging tails.
+*   **Autumnal Background:** They are sitting on a bed of colorful autumn leaves – reds, oranges, and yellows.
+*   **Overlaid Text:** There's a subtle, blurred text overlayed on the image. It appears to be the words "Jurassic" and "Together" in a stylized font. 
+
+Overall

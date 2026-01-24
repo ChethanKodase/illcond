@@ -1,0 +1,25 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **A Fishing Boat:** The primary subject is a red fishing boat, likely a crab boat, given its design. It's anchored in the water.
+*   **Sunset:** The sky is ablaze with a vibrant sunset, dominated by shades of orange, pink, and red.
+*   **Water:** The boat is floating on calm water, which perfectly reflects the colors of the sky.
+*   **Horizon:** A distant, hazy horizon line is visible.
+
+Overall, the image captures a serene and beautiful scene of a fishing boat at
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**Main Subject:**
+
+*   **A small boat:** A red and white boat with a mast and sails is the central focus. It's reflected in the water.
+
+**Background:**
+
+*   **Sunset/Sunrise:** The sky is ablaze with a vibrant, fiery sunset or sunrise. The colors are predominantly orange, red, and yellow.
+*   **Clouds:** The clouds are highly textured and patterned, creating a swirling, almost abstract effect. They are also reflecting the sunset colors.
+
+**Reflection:**
+
+*   **Boat Reflection:** The

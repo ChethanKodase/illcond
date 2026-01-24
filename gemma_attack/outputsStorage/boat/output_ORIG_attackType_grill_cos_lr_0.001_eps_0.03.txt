@@ -1,0 +1,16 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **A Fishing Boat:** The primary subject is a red fishing boat, likely a crab boat, given its design. It's anchored in the water.
+*   **Sunset:** The sky is ablaze with a vibrant sunset, dominated by shades of orange, pink, and red.
+*   **Water:** The boat is floating on calm water, which perfectly reflects the colors of the sky.
+*   **Horizon:** A distant, hazy horizon line is visible.
+
+Overall, the image captures a serene and beautiful scene of a fishing boat at
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **A traditional Mexican "trajinera" boat:** This is the most prominent element – a brightly colored, flat-bottomed boat often used for parties and celebrations along the canals of the Yucatán Peninsula (particularly in places like Xochimilco near Mexico City).
+*   **People on the boat:** There are several people on the boat, likely enjoying a trajinera ride.
+*   **State outlines:** The image is overlaid with the outlines of the states of Mexico. You can see the states of Yucatán, Quintana Roo, Tabasco

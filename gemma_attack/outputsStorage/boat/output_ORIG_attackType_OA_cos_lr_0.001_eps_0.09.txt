@@ -1,0 +1,20 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **A Fishing Boat:** The primary subject is a red fishing boat, likely a crab boat, given its design. It's anchored in the water.
+*   **Sunset:** The sky is ablaze with a vibrant sunset, dominated by shades of orange, pink, and red.
+*   **Water:** The boat is floating on calm water, which perfectly reflects the colors of the sky.
+*   **Horizon:** A distant, hazy horizon line is visible.
+
+Overall, the image captures a serene and beautiful scene of a fishing boat at
+
+=== ADVERSARIAL OUTPUT ===
+This image shows the "Google Fu" project on Thunderbird Lodge in Manitowish Waters, Wisconsin. 
+
+Here's what's happening:
+
+*   **The Lodge:** Thunderbird Lodge is a large, unique rock formation.
+*   **The Google Project:** In 2010, a group of artists and volunteers spent several days covering the rock formation with over 3.5 million small, black Google search terms.
+*   **The Image:** This aerial photograph captures the incredible scale of the project, with the Google search terms densely packed across the entire surface of the lodge.
+
+It's a fascinating

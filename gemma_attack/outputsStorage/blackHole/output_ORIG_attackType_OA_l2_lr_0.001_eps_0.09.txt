@@ -1,0 +1,16 @@
+=== CLEAN OUTPUT ===
+The image shows two different views of the same object: the supermassive black hole at the center of the galaxy M87. 
+
+Here's a breakdown of what's being shown and the key differences:
+
+* **Left Image (HT):** This is an image captured by the Hubble Space Telescope (HST). It shows a fuzzy, diffuse ring of light surrounding a dark central region. This is the "Einstein Ring" effect, caused by light being bent around the black hole's gravity.
+* **Right Image (EHT with):** This is an image captured by the Event Horizon Telescope (EHT).
+
+=== ADVERSARIAL OUTPUT ===
+This image shows a demonstration of the **"Holographic Principle"** as proposed by Gerard 't Hooft and Leonard Susskind. 
+
+Here's a breakdown of what's being illustrated:
+
+* **Left Image (labeled "HT"):** Represents a 2D surface (like a hologram).  The red regions on the surface are "information" – the data that describes the 3D space *behind* it.  The text labels indicate the locations of the 3D points.
+
+* **Right Image (labeled "EHT with"):** Shows the same 2D surface, but now it

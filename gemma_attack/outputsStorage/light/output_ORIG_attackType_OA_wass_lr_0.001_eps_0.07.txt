@@ -1,0 +1,21 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The central focus is Isaac Newton demonstrating the spectrum of light.**
+
+Here's a more detailed description:
+
+*   **Newton:** A man dressed in 17th-century attire (a long coat, breeches, and stockings) is standing and observing the rainbow of light. This is widely believed to be Isaac Newton, a pivotal figure in the history of optics.
+*   **Prism:** A prism is positioned to refract (bend) white light into its constituent colors – the rainbow spectrum.
+*   **Rainbow Spectrum:** A vibrant
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**The image depicts a historical illustration of a demonstration of Newton's prism experiment.**
+
+Here's a more detailed description:
+
+*   **Sir Isaac Newton:** The central figure is Sir Isaac Newton, the renowned physicist. He's shown holding a prism and looking through it.
+*   **Prism Experiment:** The core of the image is the demonstration of how a prism separates white light into its constituent colors (the rainbow). A beam of white light is shone through the prism, and the resulting spectrum of colors is projected across the room.
+

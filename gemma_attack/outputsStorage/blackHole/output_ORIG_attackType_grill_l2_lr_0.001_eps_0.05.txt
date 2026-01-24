@@ -1,0 +1,15 @@
+=== CLEAN OUTPUT ===
+The image shows two different views of the same object: the supermassive black hole at the center of the galaxy M87. 
+
+Here's a breakdown of what's being shown and the key differences:
+
+* **Left Image (HT):** This is an image captured by the Hubble Space Telescope (HST). It shows a fuzzy, diffuse ring of light surrounding a dark central region. This is the "Einstein Ring" effect, caused by light being bent around the black hole's gravity.
+* **Right Image (EHT with):** This is an image captured by the Event Horizon Telescope (EHT).
+
+=== ADVERSARIAL OUTPUT ===
+This image shows the famous Napping Dutchman (or Napping Sailor) phenomenon, etched into a sandstone rock formation in the Nunningen dry valley in Germany. 
+
+Here's a breakdown of what's visible:
+
+* **Left Image (Black and White):** This is a relief map created by wind erosion over thousands of years. The darker areas represent higher elevations, and the lighter areas represent lower elevations. The lines are contour lines, showing equal elevations.
+* **Right Image (Color):** This is a colorized version of the relief map. The colors represent different elevations, with red indicating higher elevations and blue

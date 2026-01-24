@@ -1,0 +1,18 @@
+=== CLEAN OUTPUT ===
+The image shows two different views of the same object: the supermassive black hole at the center of the galaxy M87. 
+
+Here's a breakdown of what's being shown and the key differences:
+
+* **Left Image (HT):** This is an image captured by the Hubble Space Telescope (HST). It shows a fuzzy, diffuse ring of light surrounding a dark central region. This is the "Einstein Ring" effect, caused by light being bent around the black hole's gravity.
+* **Right Image (EHT with):** This is an image captured by the Event Horizon Telescope (EHT).
+
+=== ADVERSARIAL OUTPUT ===
+The image shows two different views of the same distant galaxy, Messier 87 (M87), also known as Virgo A. Let's break down what's going on:
+
+**What is M87?**
+
+*   M87 is a giant elliptical galaxy located about 55 million light-years away in the Virgo Cluster. It's famous because it was the first galaxy to have a supermassive black hole at its center directly observed.
+
+**The Image and the Difference**
+
+*   **Left Image (labeled "HST"):** This is a picture of M87 taken by the

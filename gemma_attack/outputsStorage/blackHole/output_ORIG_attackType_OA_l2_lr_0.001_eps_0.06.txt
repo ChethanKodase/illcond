@@ -1,0 +1,16 @@
+=== CLEAN OUTPUT ===
+The image shows two different views of the same object: the supermassive black hole at the center of the galaxy M87. 
+
+Here's a breakdown of what's being shown and the key differences:
+
+* **Left Image (HT):** This is an image captured by the Hubble Space Telescope (HST). It shows a fuzzy, diffuse ring of light surrounding a dark central region. This is the "Einstein Ring" effect, caused by light being bent around the black hole's gravity.
+* **Right Image (EHT with):** This is an image captured by the Event Horizon Telescope (EHT).
+
+=== ADVERSARIAL OUTPUT ===
+This image shows two versions of the "Moon Sphere" experiment, a visual illusion created by the artist and researcher, Dr. David Koresh. 
+
+Here's a breakdown of what's depicted:
+
+* **Left Image (Labeled "HT"):** This is the original "Moon Sphere" image. It appears as a dark, almost black background with a bright, orange sphere in the center.  The sphere is surrounded by a dense field of words, many of which are repeated and seemingly random.
+
+* **Right Image (Labeled "EHT with"):** This is the same image processed using a specific algorithm developed

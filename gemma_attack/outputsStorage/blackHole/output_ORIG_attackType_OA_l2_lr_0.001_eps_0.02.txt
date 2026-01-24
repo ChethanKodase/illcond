@@ -1,0 +1,16 @@
+=== CLEAN OUTPUT ===
+The image shows two different views of the same object: the supermassive black hole at the center of the galaxy M87. 
+
+Here's a breakdown of what's being shown and the key differences:
+
+* **Left Image (HT):** This is an image captured by the Hubble Space Telescope (HST). It shows a fuzzy, diffuse ring of light surrounding a dark central region. This is the "Einstein Ring" effect, caused by light being bent around the black hole's gravity.
+* **Right Image (EHT with):** This is an image captured by the Event Horizon Telescope (EHT).
+
+=== ADVERSARIAL OUTPUT ===
+Certainly! Let's break down what's shown in the image.
+
+**The image depicts the first-ever direct visual image of a black hole – specifically, the supermassive black hole at the center of the galaxy M87.**
+
+Here's a more detailed explanation:
+
+*   **Left Image (Labeled "EHT"):** This is the raw, unprocessed data collected by the Event Horizon Telescope (EHT). It shows a bright ring of light surrounding a dark central region. The bright ring is caused by light from gas and dust swirling around the black hole as it's pulled in. The bright spot on

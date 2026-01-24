@@ -1,0 +1,15 @@
+=== CLEAN OUTPUT ===
+Here's a description of what's shown in the image:
+
+The image features two adorable golden retriever puppies sitting in a grassy field covered in fallen orange flowers. They are both sitting close together, looking directly at the camera with big, happy smiles and their tongues hanging out. The background is a soft, blurred green, creating a pleasant and cheerful scene. 
+
+It's a very heartwarming and cute picture!
+
+=== ADVERSARIAL OUTPUT ===
+Here's a description of what's shown in the image:
+
+The image features two adorable golden retriever puppies. They are sitting in a grassy field, both with their mouths open in joyful, excited expressions – they appear to be panting and possibly playing. 
+
+The background is a green patterned fabric with a lot of text and doodles on it. There are also some yellow flowers scattered around the puppies. 
+
+Overall, it's a heartwarming and playful picture of two happy puppies!

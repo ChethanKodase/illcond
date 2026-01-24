@@ -1,0 +1,21 @@
+=== CLEAN OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+*   **A Fishing Boat:** The primary subject is a red fishing boat, likely a crab boat, given its design. It's anchored in the water.
+*   **Sunset:** The sky is ablaze with a vibrant sunset, dominated by shades of orange, pink, and red.
+*   **Water:** The boat is floating on calm water, which perfectly reflects the colors of the sky.
+*   **Horizon:** A distant, hazy horizon line is visible.
+
+Overall, the image captures a serene and beautiful scene of a fishing boat at
+
+=== ADVERSARIAL OUTPUT ===
+Here's a breakdown of what's shown in the image:
+
+**Overall Impression:**
+
+The image is a complex and surreal digital artwork. It appears to be a layered collage of various elements, creating a dreamlike and somewhat chaotic composition. 
+
+**Key Elements:**
+
+*   **Central Figure:** A large, stylized figure of a person is prominently featured in the center. They are depicted in a dynamic pose, seemingly running or leaping.
+*   **Geometric Shapes:** The background is filled with repeating geometric shapes – triangles, squares, and lines – in various colors (red, blue, yellow, green). These shapes
