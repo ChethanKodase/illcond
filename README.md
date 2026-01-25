@@ -298,6 +298,8 @@ Repeat the same for other values of $L_\inf$ norms and other data samples by upd
 
 # Code for DiffAE attacks
 
+Follow https://github.com/phizaz/diffae to download the checkpoints and FFHQ dataset.
+
 #### Install the conda environment required and activate:
 
 
