@@ -16,7 +16,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from vae import VAE, VAE_big, VAE_big_b
+from vae_train import VAE, VAE_big, VAE_big_b
 
 
 '''
