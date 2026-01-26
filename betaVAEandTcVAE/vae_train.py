@@ -121,7 +121,7 @@ class VAE_big(nn.Module):
             nn.ConvTranspose2d(32*2, image_channels, kernel_size=6, stride=2),
             nn.Sigmoid(),
         )
-
+        
     def reparameterize(self, mu, logvar):
         std = logvar.mul(0.5).exp_()
         # return torch.normal(mu, std)
@@ -139,11 +139,10 @@ class VAE_big(nn.Module):
 
     def forward(self, x):
         h = self.encoder(x)
-        z, mu, logvar = self.bottleneck(h.to(self.device))
-
-        z = self.fc3(z)
+        lz, mu, logvar = self.bottleneck(h.to(self.device))
+        z = self.fc3(lz)
         #print('z.shape', z.shape)
-        return self.decoder(z), mu, logvar
+        return self.decoder(z), mu, logvar, lz
     
 
 class VAE_big_b(nn.Module):
@@ -228,7 +227,7 @@ class VAE_big_b(nn.Module):
         z, mu, logvar = self.bottleneck(h.to(self.device))
         z = self.fc3(z)
         #print('z.shape', z.shape)
-        return self.decoder(z), mu, logvar
+        return self.decoder(z), mu, logvar, z
 
 
 
@@ -304,7 +303,7 @@ class VAE_big_nobn(nn.Module):
         z, mu, logvar = self.bottleneck(h.to(self.device))
         z = self.fc3(z)
         #print('z.shape', z.shape)
-        return self.decoder(z), mu, logvar
+        return self.decoder(z), mu, logvar, z
 
 
 

@@ -79,7 +79,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from vae import VAE, VAE_big
+from vae_train import VAE, VAE_big
 
 likelihood_selection =  ['bernoulli', 'gaussian']
 

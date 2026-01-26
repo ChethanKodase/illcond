@@ -57,3 +57,11 @@ gemma_attack/extras/
 gemma_attack/instructions.txt
 gemma_attack/trasnferGemma3.txt
 gemma_attack/outputsStorage
+betaVAEandTcVAE/robustness_eval_saves_univ/relevancy_test/
+betaVAEandTcVAE/saved_celebA/
+betaVAEandTcVAE/robustness_eval_saves_univ/run_time_div/
+betaVAEandTcVAE/robustness_eval_saves_univ/
+betaVAEandTcVAE/perturbation_analysis/backup/
+betaVAEandTcVAE/data_faces/img_align_celeba/
+betaVAEandTcVAE/data_cel1/
+betaVAEandTcVAE/__pycache__/
