@@ -652,3 +652,13 @@ Use $L_\infty$ norm of around 0.03 to 0.05 for --desired_norm_l_inf
 #### To get the damage distribution plots for universal classic attacks attacks run : 
 
 `python betaVAEandTcVAE/BetaVAEandTCVAEsampleSpecificAttackOutputDistortionPlots.py`
+
+
+#### To get the damage distribution plots for universal adaptive attacks attacks run : 
+
+`python betaVAEandTcVAE/BetaVAEandTCVAEsampleSpecificAttackOutputDistortionPlots.py`
+
+
+#### To get qualitative plots for Beta-VAE and TC-VAE for both adaptive and classic universal attacks :
+
+`python betaVAEandTcVAE/BetaVAEandTCVAEqualitativePlotsForUniversalClassicAndAdaptiveAttacks.py`
