@@ -585,3 +585,70 @@ Repeat the same for other values of $L_\inf$ norms and other data samples by upd
 #### TO get plots of Gemma 3 layerwise condition numbers and singular values:
 
 Run : `python gemma_attack/gemma3Conditioning.py `
+
+
+
+# Code for training and attacking Beta-VAE and TC-VAE
+
+#### Install conda environment for adversarial attacks on beta-VAE and TC-VAE
+
+<pre>
+```
+conda env create -f environment1.yml
+
+```
+</pre>
+
+and activate the environment : `conda activate your_env_for_VAEs`
+
+
+#### To train Beta-VAE :
+
+<pre>
+```
+cd illcond
+python betaVAEandTcVAE/betaVAEtrainingWithCelebA.py --which_gpu 0 --beta_value 5.0 --data_directory /home/luser/autoencoder_attacks/train_aautoencoders/data_cel1 --batch_size 64 --epochs 200 --lr 1e-4 --run_time_plot_dir betaVAEandTcVAE/runtimePlots --checkpoint_storage betaVAEandTcVAE/vae_checkpoints
+```
+</pre>
+
+
+#### To train TC-VAE :
+
+<pre>
+```
+cd illcond
+python betaVAEandTcVAE/TCvaetrainingWithCelebA.py  --which_gpu 1 --beta_value 5.0 --data_directory /home/luser/autoencoder_attacks/train_aautoencoders/data_cel1 --batch_size 64 --epochs 200 --lr 1e-4 --run_time_plot_dir runtimePlots --checkpoint_storage vae_checkpoints
+```
+</pre>
+
+
+#### To perform universal attacks on Beta-VAE and TC-VAE
+
+<pre>
+```
+python betaVAEandTcVAE/BetaVAEandTCVAEUniversalClassicAndUniversalAdaptiveAttacks.py --which_gpu 0 --beta_value 5.0 --attck_type latent_l2_kf --which_model TCVAE --desired_norm_l_inf 0.04
+```
+</pre>
+
+
+Use any of the `["latent_l2_kf", "latent_wass_kf", "latent_cosine", "output_l2_kf", "output_wass_kf", "output_cos_kf", "lgr_l2_kf", "lgr_wass_kf", "lgr_cos_kf", "grill_l2_kf", "grill_wass_kf", "grill_cos_kf"]` for --attck_type type
+For --which_model use `VAE` for Beta-VAE and `TCVAE` for TC-VAE
+Use $L_\infty$ norm of around 0.04 to 0.07 for --desired_norm_l_inf
+
+
+#### To perform sample specific attacks on Beta-VAE and TC-VAE
+
+<pre>
+```
+python betaVAEandTcVAE/BetaVAEandTCVAEsampleSpecificAttacks.py --which_gpu 0 --beta_value 5.0 --attck_type latent_l2_kf_SS --which_model TCVAE --desired_norm_l_inf 0.5
+```
+</pre>
+
+Use any of the `["latent_l2_kf_SS", "latent_wass_kf_SS", "latent_cosine_SS", "output_l2_kf_SS", "output_wass_kf_SS", "output_cos_kf_SS", "lgr_l2_kf_SS", "lgr_wass_kf_SS", "lgr_cos_kf_SS", "grill_l2_kf_SS", "grill_wass_kf_SS", "grill_cos_kf_SS"]` for --attck_type type
+For --which_model use `VAE` for Beta-VAE and `TCVAE` for TC-VAE
+Use $L_\infty$ norm of around 0.03 to 0.05 for --desired_norm_l_inf
+
+
+#### To get the damage distribution plots for universal classic attacks attacks run : 
+
+`python betaVAEandTcVAE/BetaVAEandTCVAEsampleSpecificAttackOutputDistortionPlots.py`
