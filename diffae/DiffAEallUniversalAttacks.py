@@ -6,6 +6,11 @@
 
 '''
 
+Incase necessary , run this : 
+LD_LIBRARY_PATH="$CONDA_PREFIX/lib:$CONDA_PREFIX/lib/python3.9/site-packages/torch/lib:$LD_LIBRARY_PATH" \
+
+
+
 cd illcond
 conda activate dt2
 python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.5 --attck_type la_l2_kfAdamNoScheduler1 --which_gpu 5 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
@@ -16,7 +21,34 @@ python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_typ
 python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.18 --attck_type grill_cos_kfAdamNoScheduler1 --which_gpu 7 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
 
 
+cd illcond
+conda activate dt2
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.21 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.22 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.23 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 4 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
 
+cd illcond
+conda activate dt2
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.24 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.25 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.26 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 3 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+
+cd illcond
+conda activate dt2
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.27 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.28 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.29 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+
+cd illcond
+conda activate dt2
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.30 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.31 --attck_type simpAgg_l2_kfAdamNoScheduler1 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+
+
+simpAgg_wass_kfAdamNoScheduler1
+simpAgg_l2_kfAdamNoScheduler1
+
+0.21 0.22 0.23 0.24 0.25 0.26 0.27 0.28 0.29 0.30 0.31, bsa_kfAdamNoScheduler1 is done simpAgg_wass_kfAdamNoScheduler1 is underway, simpAgg_l2_kfAdamNoScheduler1 is also underway
 ####################################################################################################################################################################################################################################################################################
 ################################### weights abalation
 
@@ -378,6 +410,35 @@ def get_combined_l2_loss(normalized_attacked, source_im):
 
     return encoder_lip_sum * F.mse_loss(x, x_p, reduction='sum') 
 
+
+
+def simpAgg_l2_loss(normalized_attacked, source_im):
+    x = source_im.to(device)  # Input batch
+    x_p = normalized_attacked
+    encoder_lip_sum = 0
+    block_count = 0
+    for i, block in enumerate(model.ema_model.encoder.input_blocks):
+        x = block(x)
+        x_p = block(x_p)
+        encoder_lip_sum += F.mse_loss(x, x_p, reduction='sum') #* (cond_nums_normalized[block_count])
+        block_count+=1
+
+    for i, block in enumerate(model.ema_model.encoder.middle_block):
+        x = block(x)
+        x_p = block(x_p)
+        encoder_lip_sum += F.mse_loss(x, x_p, reduction='sum') #* (cond_nums_normalized[block_count])
+        block_count+=1
+
+    for i, block in enumerate(model.ema_model.encoder.out):
+        x = block(x)
+        x_p = block(x_p)
+        encoder_lip_sum += F.mse_loss(x, x_p, reduction='sum') #* (cond_nums_normalized[block_count])
+        block_count+=1
+
+    return encoder_lip_sum #* F.mse_loss(x, x_p, reduction='sum') 
+
+
+
 def get_combined_cosine_loss_backup(normalized_attacked_e, source_im):
     x = source_im.to(device)  # Input batch
     x_p = normalized_attacked
@@ -448,6 +509,33 @@ def get_combined_cosine_loss_cond(normal_x, source_x):
         #print("block_count", block_count)
 
     return encoder_lip_sum * (cos(source_x, normal_x)-1)**2 
+
+
+
+def get_bsa_attack(normal_x, source_x):
+
+    encoder_lip_sum = 0
+    #block_count = 0
+    for i, block in enumerate(model.ema_model.encoder.input_blocks):
+        source_x = block(source_x)
+        normal_x = block(normal_x)
+        encoder_lip_sum += cos(source_x, normal_x) #* (cond_nums_normalized[block_count])
+        #block_count+=1
+
+    for i, block in enumerate(model.ema_model.encoder.middle_block):
+        source_x = block(source_x)
+        normal_x = block(normal_x)
+        encoder_lip_sum += cos(source_x, normal_x) #* (cond_nums_normalized[block_count])
+        #block_count+=1
+
+    for i, block in enumerate(model.ema_model.encoder.out):
+        source_x = block(source_x)
+        normal_x = block(normal_x)
+        encoder_lip_sum += cos(source_x, normal_x) #* (cond_nums_normalized[block_count])
+        #block_count+=1
+        #print("block_count", block_count)
+
+    return encoder_lip_sum #* (cos(source_x, normal_x)-1)**2 
 
 
 
@@ -1054,6 +1142,35 @@ def get_combined_wasserstein_loss(normalized_attacked, source_im):
     return encoder_lip_sum * wasserstein_distance(x, x_p) 
 
 
+
+def get_SimpAgg_wasserstein_loss(normalized_attacked, source_im):
+
+    x = source_im.to(device)  # Input batch
+    x_p = normalized_attacked
+    encoder_lip_sum = 0
+    block_count = 0
+
+    for i, block in enumerate(model.ema_model.encoder.input_blocks):
+        x = block(x)
+        x_p = block(x_p)
+        encoder_lip_sum += wasserstein_distance(x, x_p) * (cond_nums_normalized[block_count])
+        block_count+=1
+
+    for i, block in enumerate(model.ema_model.encoder.middle_block):
+        x = block(x)
+        x_p = block(x_p)
+        encoder_lip_sum += wasserstein_distance(x, x_p) * (cond_nums_normalized[block_count])
+        block_count+=1
+
+    for i, block in enumerate(model.ema_model.encoder.out):
+        x = block(x)
+        x_p = block(x_p)
+        encoder_lip_sum += wasserstein_distance(x, x_p) * (cond_nums_normalized[block_count])
+        block_count+=1
+
+    return encoder_lip_sum #* wasserstein_distance(x, x_p) 
+
+
 def get_combined_wasserstein_loss_corrected(normalized_attacked, source_im):
 
     x = source_im.to(device)  # Input batch
@@ -1331,6 +1448,50 @@ if(attck_type == "grill_cos_kfAdamNoScheduler1"):
                 get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, noise_addition, adv_gen)
 
 
+print("here ? ")
+if(attck_type == "bsa_kfAdamNoScheduler1"):
+    adv_div_list = []
+    for step in range(155):
+        batch_step = 0
+        for source_im in big_tensor:
+            #print("entered ?")
+            # Clamp perturbed image into valid image range, then update noise_addition in-place
+
+            optimizer.zero_grad()
+            normalized_attacked = torch.clamp(source_im + noise_addition, mi, ma)
+
+            # Compute cosine losses across encoder layers
+            #last_layer_loss, layer_loss_list = get_combined_cosine_loss_gcr(normalized_attacked, source_im)
+
+            # Loss to maximize: cosine difference between embeddings
+            #loss_to_maximize = (get_latent_space_cosine_loss(normalized_attacked, source_im) - 1.0) ** 2
+
+            total_loss = get_bsa_attack(normalized_attacked, source_im)
+
+
+            #total_loss = -1 * loss_to_maximize
+
+            total_loss.backward()
+            optimizer.step()
+
+            # Clamp noise within L∞-norm ball
+            with torch.no_grad():
+                noise_addition.clamp_(-desired_norm_l_inf, desired_norm_l_inf)
+        
+            #print("total_loss", total_loss.item())
+
+        print("step", step)
+        if(step%10==0  and step!=0):
+            with torch.no_grad():
+                attacked_embed = model.encode(normalized_attacked.to(device))
+                xT_ad = model.encode_stochastic(normalized_attacked.to(device), attacked_embed, T=250)
+                adv_gen = model.render(xT_ad, attacked_embed, T=20)
+                #l_inf_distortion = torch.norm(noise_addition, p=float('inf'))
+                l2_distortion = torch.norm(noise_addition, p=2)
+                l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
+                deviation = torch.norm(adv_gen - source_im, p=2)
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, noise_addition, adv_gen)
+
 
 if(attck_type == "grill_cos_kfAdamNoScheduler1_mcmc"):
     adv_div_list = []
@@ -1417,6 +1578,49 @@ if(attck_type == "grill_l2_kfAdamNoScheduler1"):
 
 
 
+if(attck_type == "simpAgg_l2_kfAdamNoScheduler1"):
+    adv_div_list = []
+    for step in range(155):
+        batch_step = 0
+        for source_im in big_tensor:
+            # Clamp perturbed image into valid image range, then update noise_addition in-place
+
+            optimizer.zero_grad()
+            normalized_attacked = torch.clamp(source_im + noise_addition, mi, ma)
+
+            # Compute cosine losses across encoder layers
+            #last_layer_loss, layer_loss_list = get_combined_cosine_loss_gcr(normalized_attacked, source_im)
+
+            # Loss to maximize: cosine difference between embeddings
+            #loss_to_maximize = (get_latent_space_cosine_loss(normalized_attacked, source_im) - 1.0) ** 2
+
+            total_loss = -1 * simpAgg_l2_loss(normalized_attacked, source_im)
+
+            #total_loss = -1 * loss_to_maximize
+
+            total_loss.backward()
+            optimizer.step()
+
+            # Clamp noise within L∞-norm ball
+            with torch.no_grad():
+                noise_addition.clamp_(-desired_norm_l_inf, desired_norm_l_inf)
+
+        print("step", step)
+        if(step%10==0  and step!=0):
+            with torch.no_grad():
+                attacked_embed = model.encode(normalized_attacked.to(device))
+                xT_ad = model.encode_stochastic(normalized_attacked.to(device), attacked_embed, T=250)
+                adv_gen = model.render(xT_ad, attacked_embed, T=20)
+                #l_inf_distortion = torch.norm(noise_addition, p=float('inf'))
+                l2_distortion = torch.norm(noise_addition, p=2)
+                l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
+                deviation = torch.norm(adv_gen - source_im, p=2)
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, noise_addition, adv_gen)
+
+
+
+
+
 if(attck_type == "grill_wass_kfAdamNoScheduler1"):
     adv_div_list = []
     for step in range(155):
@@ -1456,6 +1660,46 @@ if(attck_type == "grill_wass_kfAdamNoScheduler1"):
                 deviation = torch.norm(adv_gen - source_im, p=2)
                 get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, noise_addition, adv_gen)
 
+
+
+if(attck_type == "simpAgg_wass_kfAdamNoScheduler1"):
+    adv_div_list = []
+    for step in range(155):
+        batch_step = 0
+        for source_im in big_tensor:
+            # Clamp perturbed image into valid image range, then update noise_addition in-place
+
+            optimizer.zero_grad()
+            normalized_attacked = torch.clamp(source_im + noise_addition, mi, ma)
+
+            # Compute cosine losses across encoder layers
+            #last_layer_loss, layer_loss_list = get_combined_cosine_loss_gcr(normalized_attacked, source_im)
+
+            # Loss to maximize: cosine difference between embeddings
+            #loss_to_maximize = (get_latent_space_cosine_loss(normalized_attacked, source_im) - 1.0) ** 2
+
+            total_loss =  -1 * get_SimpAgg_wasserstein_loss(normalized_attacked, source_im)
+
+            #total_loss = -1 * loss_to_maximize
+
+            total_loss.backward()
+            optimizer.step()
+
+            # Clamp noise within L∞-norm ball
+            with torch.no_grad():
+                noise_addition.clamp_(-desired_norm_l_inf, desired_norm_l_inf)
+
+        print("step", step)
+        if(step%10==0  and step!=0):
+            with torch.no_grad():
+                attacked_embed = model.encode(normalized_attacked.to(device))
+                xT_ad = model.encode_stochastic(normalized_attacked.to(device), attacked_embed, T=250)
+                adv_gen = model.render(xT_ad, attacked_embed, T=20)
+                #l_inf_distortion = torch.norm(noise_addition, p=float('inf'))
+                l2_distortion = torch.norm(noise_addition, p=2)
+                l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
+                deviation = torch.norm(adv_gen - source_im, p=2)
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, normalized_attacked, noise_addition, adv_gen)
 
 
 

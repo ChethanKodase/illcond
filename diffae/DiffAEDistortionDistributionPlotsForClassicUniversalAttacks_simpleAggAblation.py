@@ -3,7 +3,7 @@
 
 cd illcond
 conda activate dt2
-python diffae/DiffAEDistortionDistributionPlotsForClassicUniversalAttacks.py --epsilon_list 0.21 0.22 0.23 0.24 0.25 0.26 0.27 0.28 0.29 0.30 0.31
+python diffae/DiffAEDistortionDistributionPlotsForClassicUniversalAttacks_simpleAggAblation.py --epsilon_list 0.21 0.22 0.23 0.24 0.25 0.26 0.27 0.28 0.29 0.30 0.31
 
 
 '''
@@ -50,6 +50,10 @@ for i in range(100):
 #attack_types = ["latent_l2", "latent_wasserstein", "latent_SKL", "latent_cosine", "combi_l2", "combi_wasserstein", "combi_SKL", "combi_cos"]
 #attack_types = ["la_cos_kfAdamNoScheduler1", "latent_wasserstein", "latent_SKL", "latent_cosine", "combi_l2", "combi_wasserstein", "combi_SKL", "combi_cos_cond_dir_cap"]
 attack_types = ["la_l2_kfAdamNoScheduler1", "la_wass_kfAdamNoScheduler1", "latent_SKL", "la_cos_kfAdamNoScheduler1", "grill_l2_kfAdamNoScheduler1", "grill_wass_kfAdamNoScheduler1", "combi_SKL", "grill_cos_kfAdamNoScheduler1", "bsa_kfAdamNoScheduler1"]
+
+attack_types = ["simpAgg_l2_kfAdamNoScheduler1", "simpAgg_wass_kfAdamNoScheduler1", "bsa_kfAdamNoScheduler1", "grill_cos_kfAdamNoScheduler1"]
+
+
 #attack_types = ["la_l2_kfAdamNoScheduler1", "la_wass_kfAdamNoScheduler1", "la_cos_kfAdamNoScheduler1", "grill_l2_kfAdamNoScheduler1", "grill_wass_kfAdamNoScheduler1", "grill_cos_kfAdamNoScheduler1"]
 
 import seaborn as sns
@@ -58,7 +62,7 @@ import matplotlib.pyplot as plt
 
 all_metric_types = ["adv_recons", "adv_divs", "adv_divs_wass", "adv_divs_abs", "adv_divs_wass", "ssim", "psnr"]
 
-objective_names = ["LA,l-2", "LA, wasserst.", "LA, SKL", "LA, cosine", "GRILL, l-2", "GRILL, wasserst.", "GRILL, SKL", "GRILL, cosine", "BSA"]
+objective_names = ["AGG-L-2", "AGG-wass", "AGG-cos", "GRILL-cos"]
 
 #objective_names = ["LA, cosine",  "GRILL, cosine"]
 
@@ -75,8 +79,9 @@ all_l_inf_norms = epsilon_list
 
 
 #considered_attack_inds = [0, 1, 2, 3, 4, 5, 6, 7]
+    #colors = [ 'lime', 'teal', 'gold', "green"]
 
-considered_attack_inds = [0, 1, 3, 4, 5, 7]
+considered_attack_inds = [0, 1, 2, 3]
 
 mean_per_methd = []
 std_per_methd = []
@@ -87,7 +92,7 @@ for i in considered_attack_inds:
     print("attack_types[i]", attack_types[i])
     for desired_norm_l_inf in all_l_inf_norms:
         ar0 = np.load("diffae/attack_qualitative_untargeted_univ_quantitative/deviations_p/"+metric_type+"_DiffAE_attack_type"+str(attack_types[i])+"_norm_bound_"+str(desired_norm_l_inf)+"_segment_"+str(source_segment)+".npy", allow_pickle=True)
-        colors = ['blue', 'orange', 'red', 'lime', 'teal', 'gold', "green"]
+        colors = ['blue', 'orange', 'red', 'gold']
         #print("ar0",ar0)
         ar0_mean  = np.mean(ar0)
         ar0_std = np.std(ar0)
@@ -130,7 +135,7 @@ plt.xticks(rotation=45, fontsize=22)
 plt.yticks(fontsize=22)
 #plt.title("Distribution Change with Epsilon")
 plt.grid(True)
-plt.legend()
+#plt.legend()
 #plt.legend(loc='upper left', bbox_to_anchor=(1, 1), fontsize=24)
 # Adjust layout to fit the legend
 handles, labels = plt.gca().get_legend_handles_labels()
@@ -142,4 +147,4 @@ plt.tight_layout()
 
 
 plt.show()
-plt.savefig("diffae/grill_damage_distributions_variation/diffAE_bpb.png")
+plt.savefig("diffae/grill_damage_distributions_variation/diffAE_bpbSimpleAggDemo.png")

@@ -566,26 +566,84 @@ The run the below code for inference :
 `python gemma_attack/gemma3Inference.py`
 
 
-#### To perform adversarial attacks on Gemma 3:
+#### To perform adversarial baseline attacks on Gemma 3:
 
 
 <pre>
 ```
 export CUDA_VISIBLE_DEVICES=0
 conda activate gemma3
-cd illcond
-python gemma_attack/gemma3Attack1.py --attck_type grill_wass --desired_norm_l_inf 0.02 --learningRate 0.001 --num_steps 10000 --attackSample light
+cd interpretAttacks
+for ATTACK_SAMPLE in $(seq 1 300); do
+    python gemma_attack/gemma3AttackImgenet_BSA.py --attck_type bsa --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
+for ATTACK_SAMPLE in $(seq 1 300); do
+    python gemma_attack/gemma3AttackImgenet_DRA.py --attck_type dra --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
+for ATTACK_SAMPLE in $(seq 1 300); do
+    python gemma_attack/gemma3AttackImgenet_EGA1.py --attck_type ega --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
+for ATTACK_SAMPLE in $(seq 1 300); do
+    python gemma_attack/gemma3AttackImgenet_FDAm.py --attck_type fdam --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
+for ATTACK_SAMPLE in $(seq 1 300); do
+    python gemma_attack/gemma3AttackImgenet_grill_cos.py --attck_type grill_cos --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
+for ATTACK_SAMPLE in $(seq 1 300); do
+    python gemma_attack/gemma3AttackImgenet_SSP.py --attck_type ssp --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
 ```
 </pre>
 
 
-Repeat the same for other values of $L_\inf$ norms and other data samples by updating --desired_norm_l_inf and --attackSample . Use blackHole, boat, cheetah, light, walker and nature which are already available as images in the repository.
+
+#### To perform adversarial GRILL-cos attacks on Gemma 3:
+
+
+<pre>
+```
+export CUDA_VISIBLE_DEVICES=0
+conda activate gemma3
+cd interpretAttacks
+for ATTACK_SAMPLE in $(seq 1 300); do
+    python gemma_attack/gemma3AttackImgenet_grill_cos.py --attck_type grill_cos --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
+
+export CUDA_VISIBLE_DEVICES=0
+conda activate gemma3
+cd interpretAttacks
+python gemma_attack/gemma3BaselinesAndOursComparisionAllEpsilon_toTestGrillSubReady.py --learningRate 0.001 --num_steps 1000 --AttackStartLayer 0 --numLayerstAtAtime 1 --AttackStartLayer_vis 11 --whichMLP na --whichMLP_vis na --numSamplesConsidered 300
+
+```
+</pre>
+
+Repeat the same for other values of $L_\inf$ norms and other data samples by updating --desired_norm_l_inf
 
 
 #### TO get plots of Gemma 3 layerwise condition numbers and singular values:
 
 Run : `python gemma_attack/gemma3Conditioning.py `
 
+
+#### To extract quantitative BERT score plots for GRILL-cos and basline attacks on Gemma 3:
+
+
+<pre>
+```
+export CUDA_VISIBLE_DEVICES=0
+conda activate gemma3
+cd interpretAttacks
+python gemma_attack/gemma3BaselinesAndOursComparisionAllEpsilon_toTestGrillSubReady.py --learningRate 0.001 --num_steps 1000 --whichMLP na --whichMLP_vis na --numSamplesConsidered 300
+
+```
+</pre>
 
 
 # Code for training and attacking Beta-VAE and TC-VAE

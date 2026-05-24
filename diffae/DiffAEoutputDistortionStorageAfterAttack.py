@@ -15,6 +15,35 @@ python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0
 python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.33 --which_gpu 6 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
 
 
+python diffae/DiffAEallUniversalAttacks.py --desired_norm_l_inf 0.31 --attck_type  --which_gpu 4 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad
+
+cd illcond
+conda activate dt2
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.21 --which_gpu 0 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.22 --which_gpu 0 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.23 --which_gpu 0 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+
+cd illcond
+conda activate dt2
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.24 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.25 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.26 --which_gpu 1 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+
+cd illcond
+conda activate dt2
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.27 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.28 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.29 --which_gpu 2 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+
+cd illcond
+conda activate dt2
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.30 --which_gpu 3 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+python diffae/DiffAEoutputDistortionStorageAfterAttack.py --desired_norm_l_inf 0.31 --which_gpu 3 --diffae_checkpoint diffae/checkpoints --ffhq_images_directory diffae/imgs_align_uni_ad --noise_directory diffae/noise_storage
+
+bsa_kfAdamNoScheduler1
+
+0.21 0.22 0.23 0.24 0.25 0.26 0.27 0.28 0.29 0.30 0.31
+
 '''
 
 
@@ -176,6 +205,9 @@ projections = torch.randn(num_features, n_projections).to(device)
 #attack_types = ["la_l2", "la_wass", "la_cos", "grill_l2", "grill_wass", "grill_cos"]
 
 attack_types = ["la_l2_kfAdamNoScheduler1", "la_wass_kfAdamNoScheduler1", "la_cos_kfAdamNoScheduler1", "grill_l2_kfAdamNoScheduler1", "grill_wass_kfAdamNoScheduler1", "grill_cos_kfAdamNoScheduler1"]
+
+attack_types = ["simpAgg_wass_kfAdamNoScheduler1", "simpAgg_l2_kfAdamNoScheduler1"]
+
 
 
 with torch.no_grad():
