@@ -275,25 +275,72 @@ export PYTHONNOUSERSITE=1
 
 `python QwenAttack/Qwen2_5_Inference.py`
 
-#### to To perform sample specific adversarial attacks on Qwen 2.5 and save the results : 
+#### to To perform sample specific baseline adversarial attacks on Qwen 2.5 and save the results : 
 
 ```
-python QwenAttack/QwenUntargetedAttacks.py --attck_type grill_cos --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
-python QwenAttack/QwenUntargetedAttacks.py --attck_type OA_cos --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
-python QwenAttack/QwenUntargetedAttacks.py --attck_type grill_l2 --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
-python QwenAttack/QwenUntargetedAttacks.py --attck_type OA_l2 --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
-python QwenAttack/QwenUntargetedAttacks.py --attck_type grill_wass --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
-python QwenAttack/QwenUntargetedAttacks.py --attck_type OA_wass --desired_norm_l_inf 0.03 --learningRate 0.001 --sampleName astronauts --numSteps 10000
+
+export CUDA_VISIBLE_DEVICES=2
+conda deactivate
+cd illcond/
+conda activate vlmAttack
+export PYTHONNOUSERSITE=1
+for ATTACK_SAMPLE in $(seq 1 50); do
+    python qwen/QwenUntargeted_BSA.py --attck_type bsa --desired_norm_l_inf 0.005 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+for ATTACK_SAMPLE in $(seq 1 50); do
+    python qwen/QwenUntargeted_DRA.py --attck_type dra --desired_norm_l_inf 0.005 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+for ATTACK_SAMPLE in $(seq 1 50); do
+    python qwen/QwenUntargeted_EGA.py --attck_type ega --desired_norm_l_inf 0.005 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+for ATTACK_SAMPLE in $(seq 1 50); do
+    python qwen/QwenUntargeted_FDA.py --attck_type fdam --desired_norm_l_inf 0.005 --learningRate 0.001 --num_steps 1000 --layer_start 1 --attackSample $ATTACK_SAMPLE
+done
+for ATTACK_SAMPLE in $(seq 1 50); do
+    python qwen/QwenUntargeted_SSP.py --attck_type ssp --desired_norm_l_inf 0.005 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
+for ATTACK_SAMPLE in $(seq 1 50); do
+    python qwen/QwenUntargeted_GRILL_cos.py --attck_type grill_cos --desired_norm_l_inf 0.005 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
 ```
 
-Repeat the same for other values of $L_\inf$ norms and other data samples by updating --desired_norm_l_inf and --sampleName . Use blackHole, boat, cheetah, light, walker and nature which are already available as images in the repository.
+Repeat the same for other values of $L_\inf$ norms and other data samples by updating --desired_norm_l_inf.
 
+
+#### to To perform sample specific GRILL-cos adversarial attacks on Qwen 2.5 and save the results : 
+
+```
+
+export CUDA_VISIBLE_DEVICES=2
+conda deactivate
+cd illcond/
+conda activate vlmAttack
+export PYTHONNOUSERSITE=1
+for ATTACK_SAMPLE in $(seq 1 50); do
+    python QwenAttack/QwenUntargeted_GRILL_cos.py --attck_type grill_cos --desired_norm_l_inf 0.005 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
+done
+
+```
 
 ##### To plot the layerwise singular values and condition number 
 
 `python QwenAttack/qwen2p5Conditioning.py`
 
 
+#### To extract quantitative BERT score plots for GRILL-cos and basline attacks on Qwen 2.5:
+
+
+<pre>
+```
+export CUDA_VISIBLE_DEVICES=3
+conda deactivate
+cd illcond/
+conda activate gemma3
+python qwen/QwenBaselinesAndOursComparisionAllEpsilonGRILL.py --learningRate 0.001 --num_steps 1000 --numSamplesConsidered 50
+```
+</pre>
 
 
 # Code for DiffAE attacks
@@ -573,7 +620,7 @@ The run the below code for inference :
 ```
 export CUDA_VISIBLE_DEVICES=0
 conda activate gemma3
-cd interpretAttacks
+cd illcond
 for ATTACK_SAMPLE in $(seq 1 300); do
     python gemma_attack/gemma3AttackImgenet_BSA.py --attck_type bsa --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
 done
@@ -610,7 +657,7 @@ done
 ```
 export CUDA_VISIBLE_DEVICES=0
 conda activate gemma3
-cd interpretAttacks
+cd illcond
 for ATTACK_SAMPLE in $(seq 1 300); do
     python gemma_attack/gemma3AttackImgenet_grill_cos.py --attck_type grill_cos --desired_norm_l_inf 0.0009 --learningRate 0.001 --num_steps 1000 --attackSample $ATTACK_SAMPLE
 done
@@ -618,7 +665,7 @@ done
 
 export CUDA_VISIBLE_DEVICES=0
 conda activate gemma3
-cd interpretAttacks
+cd illcond
 python gemma_attack/gemma3BaselinesAndOursComparisionAllEpsilon_toTestGrillSubReady.py --learningRate 0.001 --num_steps 1000 --AttackStartLayer 0 --numLayerstAtAtime 1 --AttackStartLayer_vis 11 --whichMLP na --whichMLP_vis na --numSamplesConsidered 300
 
 ```
