@@ -23,12 +23,12 @@ import torch.optim as optim
 conda deactivate
 conda deactivate
 conda deactivate
-export CUDA_VISIBLE_DEVICES=4
+export CUDA_VISIBLE_DEVICES=0
 cd NVAE/
 source nvaeenv1/bin/activate
 cd ..
 cd illcond/
-python nvae/NvaeAllUniversalAttacks.py --attck_type "la_l2_kf" --desired_norm_l_inf 0.037 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "la_l2_kf" --desired_norm_l_inf 0.0001 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllUniversalAttacks.py --attck_type "la_wass_kf_cr" --desired_norm_l_inf 0.037 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllUniversalAttacks.py --attck_type "la_cos_kf_cr" --desired_norm_l_inf 0.037 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_kf" --desired_norm_l_inf 0.037 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
@@ -36,7 +36,66 @@ python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf" --desired_no
 python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf" --desired_norm_l_inf 0.09 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 
 
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kfim" --desired_norm_l_inf 0.025 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
 
+############################################################
+# simple aggregations, desired_norm_l_infs = [0.025, 0.035, 0.037, 0.04, 0.05]
+
+############################################################
+conda deactivate
+conda deactivate
+conda deactivate
+export CUDA_VISIBLE_DEVICES=6
+cd NVAE/
+source nvaeenv1/bin/activate
+cd ..
+cd illcond/
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_allSum" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_allSum" --desired_norm_l_inf 0.04 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_allSum" --desired_norm_l_inf 0.037 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_allSum" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_wass_kf_allSum" --desired_norm_l_inf 0.025 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+
+
+conda deactivate
+conda deactivate
+conda deactivate
+export CUDA_VISIBLE_DEVICES=7
+cd NVAE/
+source nvaeenv1/bin/activate
+cd ..
+cd illcond/
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf_allSum" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf_allSum" --desired_norm_l_inf 0.04 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf_allSum" --desired_norm_l_inf 0.037 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf_allSum" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_cos_kf_allSum" --desired_norm_l_inf 0.025 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+
+
+
+
+############################################################
+# Yet to run the below
+############################################################
+conda deactivate
+conda deactivate
+conda deactivate
+export CUDA_VISIBLE_DEVICES=7
+cd NVAE/
+source nvaeenv1/bin/activate
+cd ..
+cd illcond/
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_kf_allSum" --desired_norm_l_inf 0.05 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_kf_allSum" --desired_norm_l_inf 0.04 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_kf_allSum" --desired_norm_l_inf 0.037 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_kf_allSum" --desired_norm_l_inf 0.035 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+python nvae/NvaeAllUniversalAttacks.py --attck_type "grill_l2_kf_allSum" --desired_norm_l_inf 0.025 --data_directory ../data_cel1 --nvae_checkpoint_path ../NVAE/pretrained_checkpoint
+
+
+
+############################################################
+# simple aggregations
+############################################################
 
 
 ############################################################ Structured ablations ######################################################################################################
@@ -1557,7 +1616,7 @@ if(attck_type == "grill_wass_kf_allSum"):
             for layer, adv_output in adv_layerwise_outputs.items():
                 #print("adv_output.shape", adv_output.shape)
                 orig_output = orig_layerwise_outputs[layer]
-                loss += wasserstein_distance(adv_output, orig_output) * cond_nums_normalized[counter]
+                loss += wasserstein_distance(adv_output, orig_output) #* cond_nums_normalized[counter]
                 counter+=1
             layerwise_outputs.clear()      
             lat_loss = 0
@@ -1565,6 +1624,193 @@ if(attck_type == "grill_wass_kf_allSum"):
                 lat_loss += wasserstein_distance(adv_latent_reps[i], orig_latent_reps[i])
             
             total_loss = -1 * (loss + lat_loss)
+
+            total_loss.backward()
+            optimizer.step()
+
+            with torch.no_grad():
+                noise_addition.clamp_(-desired_norm_l_inf, desired_norm_l_inf)
+
+            #if step % 400 == 0:
+        with torch.no_grad():
+            #avgEpochLoss = avgEpochLoss/betachCounter
+            #allAvgEpochLosses.append(avgEpochLoss)
+            #print("all_adv_div_list", all_adv_div_list)
+            #scaled_noise = noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))
+            #l_inf_distortion = torch.norm(noise_addition, p=float('inf'))
+            l2_distortion = torch.norm(noise_addition, p=2)
+
+            l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
+
+            layerwise_outputs.clear()
+            adv_logits, _, _, _, _, _ = model(normalized_attacked)
+            adv_gen = model.decoder_output(adv_logits)
+            adv_gen = adv_gen.sample()
+            layerwise_outputs.clear()
+
+            deviation = torch.norm(adv_gen - source_im, p=2)
+            print("cur deviation", deviation)
+
+            all_adv_div_list.append(deviation.item())
+            mase_dev = torch.mean((adv_gen - normalized_attacked) ** 2)
+
+            #updateQuest = avgEpochLoss >= max(allAvgEpochLosses)
+            updateQuest = deviation >= max(all_adv_div_list)
+            print("updateQuest", updateQuest)
+            if(updateQuest):
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, mase_dev, normalized_attacked, noise_addition, adv_gen)
+            prevDeviation = deviation
+
+
+
+if(attck_type == "grill_l2_kf_allSum"):
+
+    all_condition_nums = np.load('nvae/saved_cond_nums/nvae_cond_nums.npy')
+
+    #print("before all_condition_nums.max(), all_condition_nums.max()", all_condition_nums.max(), all_condition_nums.min())
+    all_condition_nums[all_condition_nums>100.0]=100
+
+    cond_cmpli = (all_condition_nums.max() - all_condition_nums) + 1e-6
+    cond_nums_normalized = cond_cmpli / np.sum(cond_cmpli)
+    print("cond_nums_normalized.shape", cond_nums_normalized.shape)
+
+    print("after normalizing all_condition_nums.max(), all_condition_nums.max()", cond_nums_normalized.max(), cond_nums_normalized.min())
+
+    adv_div_list = []
+    adv_mse_list = []
+    all_adv_div_list = []
+    for step in range(100):
+        for source_im in big_tensor:
+            #source_im, label = source_im.cuda(), label
+            
+            #current_L_inf_norm = torch.norm(noise_addition, p=float('inf'))
+            #scaled_noise = noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))
+
+            #normalized_attacked = (source_im + (noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))))
+            #normalized_attacked = (normalized_attacked-normalized_attacked.min())/(normalized_attacked.max()-normalized_attacked.min())
+
+            optimizer.zero_grad()
+
+            normalized_attacked = torch.clamp(source_im + noise_addition, mi, ma)
+
+            layerwise_outputs.clear()
+            _, _, _, _, _, adv_latent_reps = model(normalized_attacked)
+            #adv_gen = model.decoder_output(adv_logits)
+            #adv_gen = adv_gen.sample()
+            adv_layerwise_outputs = layerwise_outputs.copy()
+            layerwise_outputs.clear()
+
+            _, _, _, _, _, orig_latent_reps = model(source_im)
+            orig_layerwise_outputs = layerwise_outputs.copy()
+
+
+            loss = 0
+            counter = 0
+            for layer, adv_output in adv_layerwise_outputs.items():
+                #print("adv_output.shape", adv_output.shape)
+                orig_output = orig_layerwise_outputs[layer]
+                loss += criterion(adv_output, orig_output) #* cond_nums_normalized[counter]
+                counter+=1
+            layerwise_outputs.clear()      
+            lat_loss = 0
+            for i in range(len(adv_latent_reps)):
+                lat_loss += criterion(adv_latent_reps[i], orig_latent_reps[i])
+            
+            total_loss = -1 * (loss + lat_loss)
+
+            total_loss.backward()
+            optimizer.step()
+
+            with torch.no_grad():
+                noise_addition.clamp_(-desired_norm_l_inf, desired_norm_l_inf)
+
+            #if step % 400 == 0:
+        with torch.no_grad():
+            #avgEpochLoss = avgEpochLoss/betachCounter
+            #allAvgEpochLosses.append(avgEpochLoss)
+            #print("all_adv_div_list", all_adv_div_list)
+            #scaled_noise = noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))
+            #l_inf_distortion = torch.norm(noise_addition, p=float('inf'))
+            l2_distortion = torch.norm(noise_addition, p=2)
+
+            l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
+
+            layerwise_outputs.clear()
+            adv_logits, _, _, _, _, _ = model(normalized_attacked)
+            adv_gen = model.decoder_output(adv_logits)
+            adv_gen = adv_gen.sample()
+            layerwise_outputs.clear()
+
+            deviation = torch.norm(adv_gen - source_im, p=2)
+            print("cur deviation", deviation)
+
+            all_adv_div_list.append(deviation.item())
+            mase_dev = torch.mean((adv_gen - normalized_attacked) ** 2)
+
+            #updateQuest = avgEpochLoss >= max(allAvgEpochLosses)
+            updateQuest = deviation >= max(all_adv_div_list)
+            print("updateQuest", updateQuest)
+            if(updateQuest):
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, mase_dev, normalized_attacked, noise_addition, adv_gen)
+            prevDeviation = deviation
+
+
+
+
+if(attck_type == "grill_cos_kf_allSum"):
+
+    all_condition_nums = np.load('nvae/saved_cond_nums/nvae_cond_nums.npy')
+
+    #print("before all_condition_nums.max(), all_condition_nums.max()", all_condition_nums.max(), all_condition_nums.min())
+    all_condition_nums[all_condition_nums>100.0]=100
+
+    cond_cmpli = (all_condition_nums.max() - all_condition_nums) + 1e-6
+    cond_nums_normalized = cond_cmpli / np.sum(cond_cmpli)
+    print("cond_nums_normalized.shape", cond_nums_normalized.shape)
+
+    print("after normalizing all_condition_nums.max(), all_condition_nums.max()", cond_nums_normalized.max(), cond_nums_normalized.min())
+
+    adv_div_list = []
+    adv_mse_list = []
+    all_adv_div_list = []
+    for step in range(100):
+        for source_im in big_tensor:
+            #source_im, label = source_im.cuda(), label
+            
+            #current_L_inf_norm = torch.norm(noise_addition, p=float('inf'))
+            #scaled_noise = noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))
+
+            #normalized_attacked = (source_im + (noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))))
+            #normalized_attacked = (normalized_attacked-normalized_attacked.min())/(normalized_attacked.max()-normalized_attacked.min())
+
+            optimizer.zero_grad()
+
+            normalized_attacked = torch.clamp(source_im + noise_addition, mi, ma)
+
+            layerwise_outputs.clear()
+            _, _, _, _, _, adv_latent_reps = model(normalized_attacked)
+            #adv_gen = model.decoder_output(adv_logits)
+            #adv_gen = adv_gen.sample()
+            adv_layerwise_outputs = layerwise_outputs.copy()
+            layerwise_outputs.clear()
+
+            _, _, _, _, _, orig_latent_reps = model(source_im)
+            orig_layerwise_outputs = layerwise_outputs.copy()
+
+
+            loss = 0
+            counter = 0
+            for layer, adv_output in adv_layerwise_outputs.items():
+                #print("adv_output.shape", adv_output.shape)
+                orig_output = orig_layerwise_outputs[layer]
+                loss += cos(adv_output, orig_output) #* cond_nums_normalized[counter]
+                counter+=1
+            layerwise_outputs.clear()      
+            lat_loss = 0
+            for i in range(len(adv_latent_reps)):
+                lat_loss += cos(adv_latent_reps[i], orig_latent_reps[i])
+            
+            total_loss = (loss + lat_loss)
 
             total_loss.backward()
             optimizer.step()
@@ -2118,6 +2364,106 @@ if(attck_type == "grill_cos_kf"):
             if(updateQuest):
                 get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, mase_dev, normalized_attacked, noise_addition, adv_gen)
             prevDeviation = deviation
+
+
+if(attck_type == "grill_cos_kfim"):
+
+    all_condition_nums = np.load('nvae/saved_cond_nums/nvae_cond_nums.npy')
+
+    #print("before all_condition_nums.max(), all_condition_nums.max()", all_condition_nums.max(), all_condition_nums.min())
+    all_condition_nums[all_condition_nums>100.0]=100
+
+    cond_cmpli = (all_condition_nums.max() - all_condition_nums) + 1e-6
+    cond_nums_normalized = cond_cmpli / np.sum(cond_cmpli)
+    print("cond_nums_normalized.shape", cond_nums_normalized.shape)
+
+    print("after normalizing all_condition_nums.max(), all_condition_nums.max()", cond_nums_normalized.max(), cond_nums_normalized.min())
+
+    adv_div_list = []
+    adv_mse_list = []
+    all_adv_div_list = []
+
+    for step in range(100):
+        for source_im in big_tensor:
+            #source_im, label = source_im.cuda(), label
+            
+            #current_L_inf_norm = torch.norm(noise_addition, p=float('inf'))
+            #scaled_noise = noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))
+
+            #normalized_attacked = (source_im + (noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))))
+            #normalized_attacked = (normalized_attacked-normalized_attacked.min())/(normalized_attacked.max()-normalized_attacked.min())
+
+            optimizer.zero_grad()
+
+            normalized_attacked = torch.clamp(source_im + noise_addition, mi, ma)
+
+            layerwise_outputs.clear()
+            _, _, _, _, _, adv_latent_reps = model(normalized_attacked)
+            #adv_gen = model.decoder_output(adv_logits)
+            #adv_gen = adv_gen.sample()
+            adv_layerwise_outputs = layerwise_outputs.copy()
+            layerwise_outputs.clear()
+
+            _, _, _, _, _, orig_latent_reps = model(source_im)
+            orig_layerwise_outputs = layerwise_outputs.copy()
+
+
+            loss = 0
+            counter = 0
+            for layer, adv_output in adv_layerwise_outputs.items():
+                #print("adv_output.shape", adv_output.shape)
+                orig_output = orig_layerwise_outputs[layer]
+                #loss += wasserstein_distance(adv_output, orig_output) * cond_nums_normalized[counter]
+                loss +=  (cos(adv_output, orig_output)-1)**2 * cond_nums_normalized[counter]
+                #loss +=  cos_cr(adv_output, orig_output) * cond_nums_normalized[counter]
+
+                counter+=1
+            layerwise_outputs.clear()      
+            lat_loss = 0
+            for i in range(len(adv_latent_reps)):
+                #lat_loss += wasserstein_distance(adv_latent_reps[i], orig_latent_reps[i])
+                lat_loss +=  (cos(adv_latent_reps[i], orig_latent_reps[i])-1)**2
+                #lat_loss +=  cos_cr(adv_latent_reps[i], orig_latent_reps[i])
+
+            total_loss = -1 * (loss + lat_loss) * (cos(adv_latent_reps[i], orig_latent_reps[i])-1)**2
+
+            total_loss.backward()
+            optimizer.step()
+
+            with torch.no_grad():
+                noise_addition.clamp_(-desired_norm_l_inf, desired_norm_l_inf)
+
+            #if step % 400 == 0:
+        with torch.no_grad():
+            #avgEpochLoss = avgEpochLoss/betachCounter
+            #allAvgEpochLosses.append(avgEpochLoss)
+            #print("all_adv_div_list", all_adv_div_list)
+            #scaled_noise = noise_addition * (desired_norm_l_inf / torch.norm(noise_addition, p=float('inf')))
+            #l_inf_distortion = torch.norm(noise_addition, p=float('inf'))
+            l2_distortion = torch.norm(noise_addition, p=2)
+
+            l_inf_distortion = torch.norm(normalized_attacked - source_im, p=float('inf'))
+
+            layerwise_outputs.clear()
+            adv_logits, _, _, _, _, _ = model(normalized_attacked)
+            adv_gen = model.decoder_output(adv_logits)
+            adv_gen = adv_gen.sample()
+            layerwise_outputs.clear()
+
+            deviation = torch.norm(adv_gen - source_im, p=2)
+            print("cur deviation", deviation)
+
+            all_adv_div_list.append(deviation.item())
+            mase_dev = torch.mean((adv_gen - normalized_attacked) ** 2)
+
+            #updateQuest = avgEpochLoss >= max(allAvgEpochLosses)
+            updateQuest = deviation >= max(all_adv_div_list)
+            print("updateQuest", updateQuest)
+            if(updateQuest):
+                get_em = run_time_plots_and_saves(step, total_loss, l2_distortion, l_inf_distortion, deviation, mase_dev, normalized_attacked, noise_addition, adv_gen)
+            prevDeviation = deviation
+
+
 
 
 

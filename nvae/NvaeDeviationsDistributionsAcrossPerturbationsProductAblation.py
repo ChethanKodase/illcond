@@ -15,22 +15,24 @@ import os
 
 '''
 
-conda deactivate
-conda deactivate
-conda deactivate
-cd NVAE/
-export CUDA_VISIBLE_DEVICES=7
-source nvaeenv1/bin/activate
-python nvae/NvaeLayerFractionsAblation.py
 
+
+
+conda deactivate
+conda deactivate
+conda deactivate
+export CUDA_VISIBLE_DEVICES=7
+cd NVAE/
+source nvaeenv1/bin/activate
+cd ..
+cd illcond/
+python nvae/NvaeDeviationsDistributionsAcrossPerturbationsProductAblation.py 
 '''
 
 
-
+# Replace the placeholder values with your actual checkpoint path and parameters
 checkpoint_path = '../NVAE/pretrained_checkpoint/checkpoint.pt'
-save_path = '/path/to/save'
 eval_mode = 'sample'  # Choose between 'sample', 'evaluate', 'evaluate_fid'
-batch_size = 0
 
 # Load the model
 checkpoint = torch.load(checkpoint_path, map_location='cpu')
@@ -51,15 +53,12 @@ model.load_state_dict(checkpoint['state_dict'], strict=False)
 model = model.cuda()
 model.eval()
 
-xts = []
-for i in range(100):
-    xts.append(i*10000)
+attck_types = [ "grill_wass_kf_allSum", "grill_cos_kf_allSum", "grill_l2_kf", "grill_wass_kf", "grill_cos_kf", ]
 
+#attck_types = [ "grill_wass_kf_allSum", "grill_wass_kf" ]
 
-attck_types = ["grill_wass_kf_30pRev", "grill_wass_kf_50pRev", "grill_wass_kf_70pRev", "grill_wass_kf_90pRev", "grill_wass_kf" ]
+# grill_wass_kf_allSum grill_cos_kf_allSum grill_l2_kf_allSum
 
-
-attck_typesNames = ["GRILL-30%", "GRILL-50%", "GRILL-70%", "GRILL-90%", "GRILL-100%"]
 
 img_list = os.listdir('../data_cel1/smile/')
 img_list.extend(os.listdir('../data_cel1/no_smile/'))
@@ -87,7 +86,8 @@ del trainLoader
 
 
 
-desired_norm_l_infs = [0.05]
+desired_norm_l_infs = [0.025, 0.035, 0.037, 0.04, 0.05]
+
 
 ############# plotting for paper ######################
 with torch.no_grad():
@@ -113,9 +113,6 @@ with torch.no_grad():
 
     all_method_means = []
     all_method_stds = []
-
-    l2_all_methods = {}
-
     for i in range(len(attck_types)):
         
         mean_per_per_accum = []
@@ -125,11 +122,16 @@ with torch.no_grad():
 
             optimized_noise = torch.load("nvae/univ_attack_storage/NVAE_attack_type"+str(attck_types[i])+"_norm_bound_"+str(desired_norm_l_inf)+"_.pt")
             
-
+            print("source_im.shape", source_im.shape)
+            print("optimized_noise.shape", optimized_noise.shape)
             normalized_attacked = torch.clamp(source_im + optimized_noise, mi, ma)
-
+            print("1  normalized_attacked.min(), normalized_attacked.max()", normalized_attacked.min(), normalized_attacked.max())
             normalized_attacked = (normalized_attacked-normalized_attacked.min())/(normalized_attacked.max()-normalized_attacked.min())
-
+            #normalized_attacked = torch.sigmoid(normalized_attacked) 
+            
+            print("2  normalized_attacked.min(), normalized_attacked.max()", normalized_attacked.min(), normalized_attacked.max())
+            print()
+            #print("normalized_attacked.shape", normalized_attacked.shape)
             adv_logits, log_q, log_p, kl_all, kl_diag, adv_latent_reps = model(normalized_attacked)
             reconstructed_output = model.decoder_output(adv_logits)
             adv_gen = reconstructed_output.sample()
@@ -140,47 +142,83 @@ with torch.no_grad():
 
             l2_distance_per_image = torch.norm(normalized_attacked - adv_gen, p=2, dim=[1, 2, 3])  # Shape: [50]
 
-            print("l2_distance_per_image.shape", l2_distance_per_image.shape)
-
-            print()
-
-            attack_name = attck_typesNames[i]
-
-            l2_all_methods.setdefault(attack_name, [])
-            l2_all_methods[attack_name].extend(
-                l2_distance_per_image.detach().cpu().tolist()
-            )
+            # Compute total average L2 loss across all images
+            l2_distance_per_image_mean = l2_distance_per_image.mean().item()
+            l2_distance_per_image_std = l2_distance_per_image.std().item()
+            print("i", i)
+            print("attck_types[i]", attck_types[i])
+            print("desired_norm_l_inf", desired_norm_l_inf)
+            print("l2_distance_per_image_mean", l2_distance_per_image_mean)
+            print("l2_distance_per_image_std", l2_distance_per_image_std)
 
 
-import pandas as pd
-import seaborn as sns
+            mean_per_per_accum.append(l2_distance_per_image_mean)
+            std_per_per_accum.append(l2_distance_per_image_std)
+
+        mean_per_per_accum = np.array(mean_per_per_accum)
+        std_per_per_accum = np.array(std_per_per_accum)
+
+        all_method_means.append(mean_per_per_accum)
+        all_method_stds.append(std_per_per_accum)
+
+
+
+import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
 
-import matplotlib as mpl
 
-mpl.rcParams.update({
-    "font.size": 16,
-    "axes.titlesize": 16,
-    "axes.labelsize": 16,
-    "xtick.labelsize": 16,
-    "ytick.labelsize": 16,
-    "legend.fontsize": 16,
-    "figure.titlesize": 16
-})
+epsilon = desired_norm_l_infs
 
-rows = []
-for method, values in l2_all_methods.items():
-    for v in values:
-        rows.append({
-            "Attack": method,
-            "L2 distance": v
-        })
 
-df = pd.DataFrame(rows)
 
-plt.figure(figsize=(6, 6))
-sns.boxplot(data=df, x="Attack", y="L2 distance")
-plt.xticks(rotation=90, ha="right")
+objective_names = ["AGG, wasserst.", "AGG, cosine", "ALMA, l-2", "ALMA, wasserst.", "ALMA, cosine"]
+
+#objective_names = ["AGG, wasserst.",  "ALMA, wasserst."]
+
+#color_list = ['blue', 'orange', 'green', 'red', 'lime', 'teal', 'indigo', 'gold']
+color_list = ['orange', 'red', 'lime', 'teal', 'gold']
+#color_list = ['orange', 'teal']
+
+
+plt.figure(figsize=(6, 5))  # Adjust the width and height as needed
+
+
+for i in range(len(all_method_means)):
+    mean_values = all_method_means[i]
+    std_dev = all_method_stds[i]
+
+    upper_bound = mean_values + std_dev
+    lower_bound = mean_values - std_dev
+
+    # Plot the mean curve
+    plt.plot(epsilon, mean_values, label=objective_names[i], color=color_list[i])
+
+    # Plot the shaded region (± std deviation)
+    plt.fill_between(epsilon, lower_bound, upper_bound, color=color_list[i], alpha=0.2)
+
+# Labels and legend
+plt.xlabel(r'$c$', fontsize=22)
+plt.ylabel('L-2 distance', fontsize=22)
+plt.gca().yaxis.set_major_formatter(mticker.FormatStrFormatter('%.2f'))
+
+#plt.xticks(rotation=45, fontsize=22)
+plt.xticks(rotation=45, fontsize=22)
+
+plt.yticks(fontsize=22)
+#plt.title("Distribution Change with Epsilon")
+plt.grid(True)
+#plt.legend()
+#plt.legend(loc='upper left', bbox_to_anchor=(1, 1))
+# Adjust layout to fit the legend
+
+handles, labels = plt.gca().get_legend_handles_labels()
+
+# Increase line thickness in the legend
+for handle in handles:
+    handle.set_linewidth(4)
 plt.tight_layout()
-plt.savefig("nvae/structured_ablation_plots/l2_boxplot_all_attacks.png", dpi=300)
+
+
 plt.show()
+plt.savefig("nvae/grill_perturbation_analysis/NvaeOutputDistortionDistributions.png")
